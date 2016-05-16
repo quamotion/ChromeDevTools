@@ -16,5 +16,10 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             get;
             set;
         }
+
+        public override string ToString()
+        {
+            return $"{base.TypeName} {this.Name}";
+        }
     }
 }

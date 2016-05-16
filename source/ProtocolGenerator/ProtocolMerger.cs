@@ -87,6 +87,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
                 throw new ArgumentNullException(nameof(target));
             }
 
+            // Merge the commands
             Merge(
                 protocol,
                 source,
@@ -97,19 +98,29 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
                     AddSupportedBy(s.SupportedBy, t.Parameters);
                     AddSupportedBy(s.SupportedBy, t.Returns);
                 },
-                (s, t) => false);
+                (s, t) =>
+                {
+                    bool success = true;
 
+                    success &= MergeProperties(s.SupportedBy, s.Parameters, t.Parameters);
+                    success &= MergeProperties(s.SupportedBy, s.Returns, t.Returns);
+
+                    return success;
+                });
+
+            // Merge the events
             Merge(
                 protocol,
                 source,
                 source.Events,
                 target.Events,
-                (s, t) => 
+                (s, t) =>
                 {
                     AddSupportedBy(s.SupportedBy, t.Parameters);
                 },
                 (s, t) => false);
 
+            // Merge the types
             Merge(
                 protocol,
                 source,
@@ -119,7 +130,14 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
                 {
                     AddSupportedBy(s.SupportedBy, t.Properties);
                 },
-                (s, t) => false);
+                (s, t) =>
+                {
+                    bool success = true;
+
+                    success &= MergeProperties(s.SupportedBy, s.Properties, t.Properties);
+
+                    return success;
+                });
         }
 
         /// <summary>
@@ -214,6 +232,35 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             {
                 targetItem.SupportedBy.Add(v);
             }
+        }
+
+        static bool MergeProperties(Collection<string> supportedBy, Collection<Property> sourceProperties, Collection<Property> targetProperties)
+        {
+            bool success = true;
+
+            foreach(var sourceProperty in sourceProperties)
+            {
+                var targetProperty = targetProperties.SingleOrDefault(t => NameEqualityComparer<Property>.Instance.Equals(sourceProperty, t));
+                
+                if (targetProperty == null)
+                {
+                    // If there is no property with the same name, copy the property itself
+                    targetProperties.Add(sourceProperty);
+                }
+                else if (targetProperty.Equals(sourceProperty))
+                {
+                    // If the target contains exactly the same property, copy over the supported attributes
+                    AddSupportedBy(supportedBy, targetProperty);
+                }
+                else
+                {
+                    // Merge conflict, not yet supported.
+                    // See e.g. Worker.connectToWorker on Chrome vs. Safari
+                    success = false;
+                }
+            }
+
+            return success;
         }
     }
 }
