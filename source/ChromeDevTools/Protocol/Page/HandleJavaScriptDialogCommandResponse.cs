@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.HandleJavaScriptDialog)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class HandleJavaScriptDialogCommandResponse
 	{
 	}

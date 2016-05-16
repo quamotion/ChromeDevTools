@@ -8,10 +8,12 @@ namespace MasterDevs.ChromeDevTools.Protocol
 		{
 			public const string Enable = "Inspector.enable";
 			public const string Disable = "Inspector.disable";
+			public const string Initialized = "Inspector.initialized";
 			public const string EvaluateForTestInFrontend = "Inspector.evaluateForTestInFrontend";
 			public const string Inspect = "Inspector.inspect";
 			public const string Detached = "Inspector.detached";
 			public const string TargetCrashed = "Inspector.targetCrashed";
+			public const string ActivateExtraDomains = "Inspector.activateExtraDomains";
 		}
 
 		public static class Memory
@@ -51,6 +53,16 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string SetShowViewportSizeOnResize = "Page.setShowViewportSizeOnResize";
 			public const string SetColorPickerEnabled = "Page.setColorPickerEnabled";
 			public const string SetOverlayMessage = "Page.setOverlayMessage";
+			public const string SearchInResources = "Page.searchInResources";
+			public const string SetShowPaintRects = "Page.setShowPaintRects";
+			public const string GetScriptExecutionStatus = "Page.getScriptExecutionStatus";
+			public const string SetScriptExecutionDisabled = "Page.setScriptExecutionDisabled";
+			public const string SetEmulatedMedia = "Page.setEmulatedMedia";
+			public const string GetCompositingBordersVisible = "Page.getCompositingBordersVisible";
+			public const string SetCompositingBordersVisible = "Page.setCompositingBordersVisible";
+			public const string SnapshotNode = "Page.snapshotNode";
+			public const string SnapshotRect = "Page.snapshotRect";
+			public const string Archive = "Page.archive";
 			public const string DomContentEventFired = "Page.domContentEventFired";
 			public const string LoadEventFired = "Page.loadEventFired";
 			public const string FrameAttached = "Page.frameAttached";
@@ -68,6 +80,7 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string ColorPicked = "Page.colorPicked";
 			public const string InterstitialShown = "Page.interstitialShown";
 			public const string InterstitialHidden = "Page.interstitialHidden";
+			public const string ScriptsEnabled = "Page.scriptsEnabled";
 		}
 
 		public static class Rendering
@@ -107,6 +120,14 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string Disable = "Runtime.disable";
 			public const string IsRunRequired = "Runtime.isRunRequired";
 			public const string SetCustomObjectFormatterEnabled = "Runtime.setCustomObjectFormatterEnabled";
+			public const string Parse = "Runtime.parse";
+			public const string GetDisplayableProperties = "Runtime.getDisplayableProperties";
+			public const string GetCollectionEntries = "Runtime.getCollectionEntries";
+			public const string SaveResult = "Runtime.saveResult";
+			public const string GetRuntimeTypesForVariablesAtOffsets = "Runtime.getRuntimeTypesForVariablesAtOffsets";
+			public const string EnableTypeProfiler = "Runtime.enableTypeProfiler";
+			public const string DisableTypeProfiler = "Runtime.disableTypeProfiler";
+			public const string GetBasicBlocks = "Runtime.getBasicBlocks";
 			public const string ExecutionContextCreated = "Runtime.executionContextCreated";
 			public const string ExecutionContextDestroyed = "Runtime.executionContextDestroyed";
 			public const string ExecutionContextsCleared = "Runtime.executionContextsCleared";
@@ -117,6 +138,8 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string Enable = "Console.enable";
 			public const string Disable = "Console.disable";
 			public const string ClearMessages = "Console.clearMessages";
+			public const string SetMonitoringXHREnabled = "Console.setMonitoringXHREnabled";
+			public const string AddInspectedNode = "Console.addInspectedNode";
 			public const string MessageAdded = "Console.messageAdded";
 			public const string MessageRepeatCountUpdated = "Console.messageRepeatCountUpdated";
 			public const string MessagesCleared = "Console.messagesCleared";
@@ -141,6 +164,7 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string EmulateNetworkConditions = "Network.emulateNetworkConditions";
 			public const string SetCacheDisabled = "Network.setCacheDisabled";
 			public const string SetDataSizeLimitsForTest = "Network.setDataSizeLimitsForTest";
+			public const string LoadResource = "Network.loadResource";
 			public const string RequestWillBeSent = "Network.requestWillBeSent";
 			public const string RequestServedFromCache = "Network.requestServedFromCache";
 			public const string ResponseReceived = "Network.responseReceived";
@@ -155,6 +179,7 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string WebSocketFrameError = "Network.webSocketFrameError";
 			public const string WebSocketFrameSent = "Network.webSocketFrameSent";
 			public const string EventSourceMessageReceived = "Network.eventSourceMessageReceived";
+			public const string RequestServedFromMemoryCache = "Network.requestServedFromMemoryCache";
 		}
 
 		public static class Database
@@ -260,6 +285,10 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string GetNodeForLocation = "DOM.getNodeForLocation";
 			public const string GetRelayoutBoundary = "DOM.getRelayoutBoundary";
 			public const string GetHighlightObjectForTest = "DOM.getHighlightObjectForTest";
+			public const string GetAccessibilityPropertiesForNode = "DOM.getAccessibilityPropertiesForNode";
+			public const string HighlightSelector = "DOM.highlightSelector";
+			public const string PushNodeByBackendIdToFrontend = "DOM.pushNodeByBackendIdToFrontend";
+			public const string ReleaseBackendNodeIds = "DOM.releaseBackendNodeIds";
 			public const string DocumentUpdated = "DOM.documentUpdated";
 			public const string InspectNodeRequested = "DOM.inspectNodeRequested";
 			public const string SetChildNodes = "DOM.setChildNodes";
@@ -294,10 +323,21 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string AddRule = "CSS.addRule";
 			public const string ForcePseudoState = "CSS.forcePseudoState";
 			public const string GetMediaQueries = "CSS.getMediaQueries";
+			public const string GetAllStyleSheets = "CSS.getAllStyleSheets";
+			public const string GetStyleSheet = "CSS.getStyleSheet";
+			public const string SetStyleText = "CSS.setStyleText";
+			public const string GetSupportedCSSProperties = "CSS.getSupportedCSSProperties";
+			public const string GetSupportedSystemFontFamilyNames = "CSS.getSupportedSystemFontFamilyNames";
+			public const string GetNamedFlowCollection = "CSS.getNamedFlowCollection";
 			public const string MediaQueryResultChanged = "CSS.mediaQueryResultChanged";
 			public const string StyleSheetChanged = "CSS.styleSheetChanged";
 			public const string StyleSheetAdded = "CSS.styleSheetAdded";
 			public const string StyleSheetRemoved = "CSS.styleSheetRemoved";
+			public const string NamedFlowCreated = "CSS.namedFlowCreated";
+			public const string NamedFlowRemoved = "CSS.namedFlowRemoved";
+			public const string RegionOversetChanged = "CSS.regionOversetChanged";
+			public const string RegisteredNamedFlowContentElement = "CSS.registeredNamedFlowContentElement";
+			public const string UnregisteredNamedFlowContentElement = "CSS.unregisteredNamedFlowContentElement";
 		}
 
 		public static class Timeline
@@ -307,6 +347,8 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string Start = "Timeline.start";
 			public const string Stop = "Timeline.stop";
 			public const string EventRecorded = "Timeline.eventRecorded";
+			public const string RecordingStarted = "Timeline.recordingStarted";
+			public const string RecordingStopped = "Timeline.recordingStopped";
 		}
 
 		public static class Debugger
@@ -349,6 +391,7 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string FlushAsyncOperationEvents = "Debugger.flushAsyncOperationEvents";
 			public const string SetAsyncOperationBreakpoint = "Debugger.setAsyncOperationBreakpoint";
 			public const string RemoveAsyncOperationBreakpoint = "Debugger.removeAsyncOperationBreakpoint";
+			public const string SetOverlayMessage = "Debugger.setOverlayMessage";
 			public const string GlobalObjectCleared = "Debugger.globalObjectCleared";
 			public const string ScriptParsed = "Debugger.scriptParsed";
 			public const string ScriptFailedToParse = "Debugger.scriptFailedToParse";
@@ -358,6 +401,8 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string PromiseUpdated = "Debugger.promiseUpdated";
 			public const string AsyncOperationStarted = "Debugger.asyncOperationStarted";
 			public const string AsyncOperationCompleted = "Debugger.asyncOperationCompleted";
+			public const string DidSampleProbe = "Debugger.didSampleProbe";
+			public const string PlayBreakpointActionSound = "Debugger.playBreakpointActionSound";
 		}
 
 		public static class DOMDebugger
@@ -409,9 +454,11 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string ConnectToWorker = "Worker.connectToWorker";
 			public const string DisconnectFromWorker = "Worker.disconnectFromWorker";
 			public const string SetAutoconnectToWorkers = "Worker.setAutoconnectToWorkers";
+			public const string CanInspectWorkers = "Worker.canInspectWorkers";
 			public const string WorkerCreated = "Worker.workerCreated";
 			public const string WorkerTerminated = "Worker.workerTerminated";
 			public const string DispatchMessageFromWorker = "Worker.dispatchMessageFromWorker";
+			public const string DisconnectedFromWorker = "Worker.disconnectedFromWorker";
 		}
 
 		public static class ServiceWorker
@@ -475,6 +522,8 @@ namespace MasterDevs.ChromeDevTools.Protocol
 			public const string ProfileSnapshot = "LayerTree.profileSnapshot";
 			public const string ReplaySnapshot = "LayerTree.replaySnapshot";
 			public const string SnapshotCommandLog = "LayerTree.snapshotCommandLog";
+			public const string LayersForNode = "LayerTree.layersForNode";
+			public const string ReasonsForCompositingLayer = "LayerTree.reasonsForCompositingLayer";
 			public const string LayerTreeDidChange = "LayerTree.layerTreeDidChange";
 			public const string LayerPainted = "LayerTree.layerPainted";
 		}
@@ -519,6 +568,14 @@ namespace MasterDevs.ChromeDevTools.Protocol
 		public static class Accessibility
 		{
 			public const string GetAXNode = "Accessibility.getAXNode";
+		}
+
+		public static class GenericTypes
+		{
+		}
+
+		public static class OverlayTypes
+		{
 		}
 
 	}

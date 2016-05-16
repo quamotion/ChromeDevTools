@@ -7,6 +7,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// </summary>
 	[Event(ProtocolName.CSS.MediaQueryResultChanged)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class MediaQueryResultChangedEvent
 	{
 	}

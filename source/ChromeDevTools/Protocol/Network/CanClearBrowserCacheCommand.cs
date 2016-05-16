@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// </summary>
 	[Command(ProtocolName.Network.CanClearBrowserCache)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class CanClearBrowserCacheCommand
 	{
 	}

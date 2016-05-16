@@ -7,12 +7,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[Event(ProtocolName.DOM.InlineStyleInvalidated)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class InlineStyleInvalidatedEvent
 	{
 		/// <summary>
 		/// Gets or sets Ids of the nodes for which the inline styles have been invalidated.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long[] NodeIds { get; set; }
 	}
 }

@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 	/// </summary>
 	[CommandResponse(ProtocolName.IndexedDB.RequestDatabase)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class RequestDatabaseCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Database with an array of object stores.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public DatabaseWithObjectStores DatabaseWithObjectStores { get; set; }
 	}
 }

@@ -9,17 +9,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.GetResponseBody)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetResponseBodyCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Response body.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Body { get; set; }
 		/// <summary>
 		/// Gets or sets True, if content was sent as base64.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool Base64Encoded { get; set; }
 	}
 }

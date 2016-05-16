@@ -7,17 +7,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[Event(ProtocolName.DOM.SetChildNodes)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class SetChildNodesEvent
 	{
 		/// <summary>
 		/// Gets or sets Parent node id to populate with children.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long ParentId { get; set; }
 		/// <summary>
 		/// Gets or sets Child nodes array.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Node[] Nodes { get; set; }
 	}
 }

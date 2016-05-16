@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Timeline
 	/// </summary>
 	[CommandResponse(ProtocolName.Timeline.Stop)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class StopCommandResponse
 	{
 	}

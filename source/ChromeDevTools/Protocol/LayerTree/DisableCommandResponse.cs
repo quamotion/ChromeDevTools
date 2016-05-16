@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 	/// </summary>
 	[CommandResponse(ProtocolName.LayerTree.Disable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DisableCommandResponse
 	{
 	}

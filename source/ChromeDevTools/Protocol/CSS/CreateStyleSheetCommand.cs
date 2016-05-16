@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// </summary>
 	[Command(ProtocolName.CSS.CreateStyleSheet)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class CreateStyleSheetCommand
 	{
 		/// <summary>
 		/// Gets or sets Identifier of the frame where "via-inspector" stylesheet should be created.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string FrameId { get; set; }
 	}
 }

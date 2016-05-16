@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// </summary>
 	[Command(ProtocolName.Runtime.ReleaseObject)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class ReleaseObjectCommand
 	{
 		/// <summary>
 		/// Gets or sets Identifier of the object to release.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string ObjectId { get; set; }
 	}
 }

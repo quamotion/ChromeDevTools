@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.DeleteCookie)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DeleteCookieCommandResponse
 	{
 	}

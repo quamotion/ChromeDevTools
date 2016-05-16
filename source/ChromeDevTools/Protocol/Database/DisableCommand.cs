@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Database
 	/// </summary>
 	[Command(ProtocolName.Database.Disable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DisableCommand
 	{
 	}

@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.ApplicationCache
 	/// </summary>
 	[CommandResponse(ProtocolName.ApplicationCache.GetManifestForFrame)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetManifestForFrameCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Manifest URL for document in the given frame.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string ManifestURL { get; set; }
 	}
 }

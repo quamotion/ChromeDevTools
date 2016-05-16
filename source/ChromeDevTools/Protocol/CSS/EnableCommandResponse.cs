@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// </summary>
 	[CommandResponse(ProtocolName.CSS.Enable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class EnableCommandResponse
 	{
 	}

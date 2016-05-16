@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Inspector
 	/// </summary>
 	[CommandResponse(ProtocolName.Inspector.Disable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DisableCommandResponse
 	{
 	}

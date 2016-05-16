@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.ApplicationCache
 	/// </summary>
 	[CommandResponse(ProtocolName.ApplicationCache.Enable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class EnableCommandResponse
 	{
 	}

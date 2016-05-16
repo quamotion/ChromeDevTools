@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// </summary>
 	[CommandResponse(ProtocolName.Runtime.ReleaseObjectGroup)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class ReleaseObjectGroupCommandResponse
 	{
 	}

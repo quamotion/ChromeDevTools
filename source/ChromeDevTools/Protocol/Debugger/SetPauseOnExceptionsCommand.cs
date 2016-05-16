@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// </summary>
 	[Command(ProtocolName.Debugger.SetPauseOnExceptions)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class SetPauseOnExceptionsCommand
 	{
 		/// <summary>
 		/// Gets or sets Pause on exceptions mode.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string State { get; set; }
 	}
 }

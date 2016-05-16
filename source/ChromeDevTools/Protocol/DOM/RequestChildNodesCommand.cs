@@ -9,17 +9,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[Command(ProtocolName.DOM.RequestChildNodes)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class RequestChildNodesCommand
 	{
 		/// <summary>
 		/// Gets or sets Id of the node to get children for.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long NodeId { get; set; }
 		/// <summary>
 		/// Gets or sets The maximum depth at which children should be retrieved, defaults to 1. Use -1 for the entire subtree or provide an integer larger than 0.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long Depth { get; set; }
 	}
 }

@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// </summary>
 	[CommandResponse(ProtocolName.Runtime.Run)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class RunCommandResponse
 	{
 	}

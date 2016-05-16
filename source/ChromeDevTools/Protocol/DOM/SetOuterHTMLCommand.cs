@@ -9,17 +9,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[Command(ProtocolName.DOM.SetOuterHTML)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class SetOuterHTMLCommand
 	{
 		/// <summary>
 		/// Gets or sets Id of the node to set markup for.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long NodeId { get; set; }
 		/// <summary>
 		/// Gets or sets Outer HTML markup to set.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string OuterHTML { get; set; }
 	}
 }

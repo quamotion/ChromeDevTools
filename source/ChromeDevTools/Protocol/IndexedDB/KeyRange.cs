@@ -8,27 +8,32 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 	/// Key range.
 	/// </summary>
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class KeyRange
 	{
 		/// <summary>
 		/// Gets or sets Lower bound.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Key Lower { get; set; }
 		/// <summary>
 		/// Gets or sets Upper bound.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Key Upper { get; set; }
 		/// <summary>
 		/// Gets or sets If true lower bound is open.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool LowerOpen { get; set; }
 		/// <summary>
 		/// Gets or sets If true upper bound is open.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool UpperOpen { get; set; }
 	}
 }

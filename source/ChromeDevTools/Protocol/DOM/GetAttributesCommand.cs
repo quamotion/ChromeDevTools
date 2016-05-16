@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[Command(ProtocolName.DOM.GetAttributes)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetAttributesCommand
 	{
 		/// <summary>
 		/// Gets or sets Id of the node to retrieve attibutes for.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long NodeId { get; set; }
 	}
 }

@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.QuerySelectorAll)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class QuerySelectorAllCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Query selector result.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long[] NodeIds { get; set; }
 	}
 }

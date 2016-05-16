@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.GetResourceTree)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetResourceTreeCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Present frame / resource tree structure.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public FrameResourceTree FrameTree { get; set; }
 	}
 }

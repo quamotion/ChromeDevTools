@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 	/// </summary>
 	[Command(ProtocolName.IndexedDB.Enable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class EnableCommand
 	{
 	}

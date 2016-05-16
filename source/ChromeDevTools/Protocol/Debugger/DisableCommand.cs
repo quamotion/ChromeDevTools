@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// </summary>
 	[Command(ProtocolName.Debugger.Disable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DisableCommand
 	{
 	}

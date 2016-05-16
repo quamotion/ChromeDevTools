@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.SetAttributesAsText)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class SetAttributesAsTextCommandResponse
 	{
 	}

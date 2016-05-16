@@ -9,17 +9,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 	/// </summary>
 	[CommandResponse(ProtocolName.IndexedDB.RequestData)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class RequestDataCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Array of object store data entries.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public DataEntry[] ObjectStoreDataEntries { get; set; }
 		/// <summary>
 		/// Gets or sets If true, there are more entries to fetch in the given range.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool HasMore { get; set; }
 	}
 }

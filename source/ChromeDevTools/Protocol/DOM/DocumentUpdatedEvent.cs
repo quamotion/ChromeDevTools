@@ -7,6 +7,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[Event(ProtocolName.DOM.DocumentUpdated)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DocumentUpdatedEvent
 	{
 	}

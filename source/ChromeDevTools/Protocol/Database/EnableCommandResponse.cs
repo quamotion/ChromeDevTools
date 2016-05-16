@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Database
 	/// </summary>
 	[CommandResponse(ProtocolName.Database.Enable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class EnableCommandResponse
 	{
 	}

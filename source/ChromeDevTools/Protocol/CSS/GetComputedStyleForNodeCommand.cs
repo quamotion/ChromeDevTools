@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// </summary>
 	[Command(ProtocolName.CSS.GetComputedStyleForNode)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetComputedStyleForNodeCommand
 	{
 		/// <summary>
 		/// Gets or sets NodeId
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long NodeId { get; set; }
 	}
 }

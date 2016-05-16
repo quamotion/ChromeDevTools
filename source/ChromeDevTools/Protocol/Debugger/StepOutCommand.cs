@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// </summary>
 	[Command(ProtocolName.Debugger.StepOut)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class StepOutCommand
 	{
 	}

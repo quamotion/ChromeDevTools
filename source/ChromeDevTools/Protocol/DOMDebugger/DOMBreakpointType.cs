@@ -5,6 +5,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger{
 	/// DOM breakpoint type.
 	/// </summary>
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public enum DOMBreakpointType
 	{
 			Subtree_modified,

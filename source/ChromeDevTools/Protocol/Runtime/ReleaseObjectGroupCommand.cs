@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// </summary>
 	[Command(ProtocolName.Runtime.ReleaseObjectGroup)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class ReleaseObjectGroupCommand
 	{
 		/// <summary>
 		/// Gets or sets Symbolic object group name.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string ObjectGroup { get; set; }
 	}
 }

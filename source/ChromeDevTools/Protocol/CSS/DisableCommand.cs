@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// </summary>
 	[Command(ProtocolName.CSS.Disable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DisableCommand
 	{
 	}

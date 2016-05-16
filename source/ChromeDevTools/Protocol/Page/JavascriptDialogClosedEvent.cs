@@ -7,6 +7,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// </summary>
 	[Event(ProtocolName.Page.JavascriptDialogClosed)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class JavascriptDialogClosedEvent
 	{
 	}

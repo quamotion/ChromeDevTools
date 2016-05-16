@@ -7,17 +7,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[Event(ProtocolName.DOM.CharacterDataModified)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class CharacterDataModifiedEvent
 	{
 		/// <summary>
 		/// Gets or sets Id of the node that has changed.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long NodeId { get; set; }
 		/// <summary>
 		/// Gets or sets New text value.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string CharacterData { get; set; }
 	}
 }

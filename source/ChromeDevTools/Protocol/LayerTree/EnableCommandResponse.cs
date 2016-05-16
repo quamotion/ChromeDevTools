@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 	/// </summary>
 	[CommandResponse(ProtocolName.LayerTree.Enable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class EnableCommandResponse
 	{
 	}

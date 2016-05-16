@@ -9,17 +9,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// </summary>
 	[Command(ProtocolName.Page.DeleteCookie)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DeleteCookieCommand
 	{
 		/// <summary>
 		/// Gets or sets Name of the cookie to remove.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string CookieName { get; set; }
 		/// <summary>
 		/// Gets or sets URL to match cooke domain and path.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Url { get; set; }
 	}
 }

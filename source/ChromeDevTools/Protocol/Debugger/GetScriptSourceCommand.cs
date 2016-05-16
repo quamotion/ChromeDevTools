@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// </summary>
 	[Command(ProtocolName.Debugger.GetScriptSource)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetScriptSourceCommand
 	{
 		/// <summary>
 		/// Gets or sets Id of the script to get source for.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string ScriptId { get; set; }
 	}
 }

@@ -7,17 +7,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[Event(ProtocolName.DOM.ShadowRootPushed)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class ShadowRootPushedEvent
 	{
 		/// <summary>
 		/// Gets or sets Host element id.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long HostId { get; set; }
 		/// <summary>
 		/// Gets or sets Shadow root.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Node Root { get; set; }
 	}
 }

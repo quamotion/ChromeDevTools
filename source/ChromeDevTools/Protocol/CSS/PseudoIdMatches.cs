@@ -8,17 +8,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// CSS rule collection for a single pseudo style.
 	/// </summary>
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class PseudoIdMatches
 	{
 		/// <summary>
 		/// Gets or sets Pseudo style identifier (see <code>enum PseudoId</code> in <code>ComputedStyleConstants.h</code>).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long PseudoId { get; set; }
 		/// <summary>
 		/// Gets or sets Matches of CSS rules applicable to the pseudo style.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public RuleMatch[] Matches { get; set; }
 	}
 }

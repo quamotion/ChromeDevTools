@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMStorage
 	/// </summary>
 	[CommandResponse(ProtocolName.DOMStorage.Disable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class DisableCommandResponse
 	{
 	}

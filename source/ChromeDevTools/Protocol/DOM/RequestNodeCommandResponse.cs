@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.RequestNode)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class RequestNodeCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Node id for given object.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long NodeId { get; set; }
 	}
 }

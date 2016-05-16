@@ -7,6 +7,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Console
 	/// </summary>
 	[Event(ProtocolName.Console.MessagesCleared)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class MessagesClearedEvent
 	{
 	}

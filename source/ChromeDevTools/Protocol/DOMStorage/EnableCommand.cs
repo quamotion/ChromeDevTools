@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMStorage
 	/// </summary>
 	[Command(ProtocolName.DOMStorage.Enable)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class EnableCommand
 	{
 	}

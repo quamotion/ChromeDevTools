@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.ApplicationCache
 	/// </summary>
 	[Command(ProtocolName.ApplicationCache.GetManifestForFrame)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetManifestForFrameCommand
 	{
 		/// <summary>
 		/// Gets or sets Identifier of the frame containing document whose manifest is retrieved.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string FrameId { get; set; }
 	}
 }

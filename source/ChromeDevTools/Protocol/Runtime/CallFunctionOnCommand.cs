@@ -9,37 +9,44 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// </summary>
 	[Command(ProtocolName.Runtime.CallFunctionOn)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class CallFunctionOnCommand
 	{
 		/// <summary>
 		/// Gets or sets Identifier of the object to call function on.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string ObjectId { get; set; }
 		/// <summary>
 		/// Gets or sets Declaration of the function to call.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string FunctionDeclaration { get; set; }
 		/// <summary>
 		/// Gets or sets Call arguments. All call arguments must belong to the same JavaScript world as the target object.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public CallArgument[] Arguments { get; set; }
 		/// <summary>
 		/// Gets or sets Specifies whether function call should stop on exceptions and mute console. Overrides setPauseOnException state.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool DoNotPauseOnExceptionsAndMuteConsole { get; set; }
 		/// <summary>
 		/// Gets or sets Whether the result is expected to be a JSON object which should be sent by value.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool ReturnByValue { get; set; }
 		/// <summary>
 		/// Gets or sets Whether preview should be generated for the result.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool GeneratePreview { get; set; }
 	}
 }

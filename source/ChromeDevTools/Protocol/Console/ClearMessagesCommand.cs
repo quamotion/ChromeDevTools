@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Console
 	/// </summary>
 	[Command(ProtocolName.Console.ClearMessages)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class ClearMessagesCommand
 	{
 	}

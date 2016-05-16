@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// </summary>
 	[CommandResponse(ProtocolName.CSS.GetStyleSheetText)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetStyleSheetTextCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets The stylesheet text.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Text { get; set; }
 	}
 }

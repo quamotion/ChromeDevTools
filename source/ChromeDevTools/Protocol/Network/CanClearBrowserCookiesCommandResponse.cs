@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.CanClearBrowserCookies)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class CanClearBrowserCookiesCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets True if browser cookies can be cleared.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool Result { get; set; }
 	}
 }

@@ -9,6 +9,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// </summary>
 	[Command(ProtocolName.Network.ClearBrowserCookies)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class ClearBrowserCookiesCommand
 	{
 	}

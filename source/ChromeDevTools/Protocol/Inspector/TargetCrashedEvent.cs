@@ -7,6 +7,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Inspector
 	/// </summary>
 	[Event(ProtocolName.Inspector.TargetCrashed)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class TargetCrashedEvent
 	{
 	}

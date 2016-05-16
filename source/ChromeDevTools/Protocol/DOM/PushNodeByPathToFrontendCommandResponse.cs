@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.PushNodeByPathToFrontend)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class PushNodeByPathToFrontendCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Id of the node for given path.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long NodeId { get; set; }
 	}
 }

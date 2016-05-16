@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.GetFunctionDetails)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetFunctionDetailsCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Information about the function.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public FunctionDetails Details { get; set; }
 	}
 }

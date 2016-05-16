@@ -9,12 +9,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.GetSearchResults)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GetSearchResultsCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Ids of the search result nodes.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long[] NodeIds { get; set; }
 	}
 }

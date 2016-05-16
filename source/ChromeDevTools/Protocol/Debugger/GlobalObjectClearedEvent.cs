@@ -7,6 +7,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// </summary>
 	[Event(ProtocolName.Debugger.GlobalObjectCleared)]
 	[SupportedBy("Chrome-Tip")]
+	[SupportedBy("iOS-9.3")]
 	public class GlobalObjectClearedEvent
 	{
 	}
