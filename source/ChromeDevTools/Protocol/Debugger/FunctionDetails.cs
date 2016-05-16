@@ -14,6 +14,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 		/// Gets or sets Location of the function, none for native functions.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Location Location { get; set; }
 		/// <summary>
 		/// Gets or sets Name of the function.
@@ -29,6 +30,22 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 		/// Gets or sets Scope chain for this closure.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Scope[] ScopeChain { get; set; }
+		/// <summary>
+		/// Gets or sets Name of the function. Not present for anonymous functions.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public string Name { get; set; }
+		/// <summary>
+		/// Gets or sets Display name of the function(specified in 'displayName' property on the function object).
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public string DisplayName { get; set; }
+		/// <summary>
+		/// Gets or sets Name of the function inferred from its initial assignment.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public string InferredName { get; set; }
 	}
 }

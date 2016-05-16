@@ -14,11 +14,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 		/// Gets or sets Frame information for this tree item.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Frame Frame { get; set; }
 		/// <summary>
 		/// Gets or sets Child frames.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public FrameResourceTree[] ChildFrames { get; set; }
 		public class ResourcesArray
 		{

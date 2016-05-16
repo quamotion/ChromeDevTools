@@ -14,6 +14,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 		/// Gets or sets Whether the node info tooltip should be shown (default: false).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool ShowInfo { get; set; }
 		/// <summary>
 		/// Gets or sets Whether the rulers should be shown (default: false).

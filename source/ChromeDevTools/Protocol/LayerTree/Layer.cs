@@ -14,6 +14,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 		/// Gets or sets The unique id for this layer.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string LayerId { get; set; }
 		/// <summary>
 		/// Gets or sets The id of parent (not present for root).
@@ -69,6 +70,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 		/// Gets or sets Indicates how many time this layer has painted.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long PaintCount { get; set; }
 		/// <summary>
 		/// Gets or sets Indicates whether this layer hosts any content, rather than being used for transform/scrolling purposes only.
@@ -85,5 +87,55 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
 		public ScrollRect[] ScrollRects { get; set; }
+		/// <summary>
+		/// Gets or sets The id for the node associated with this layer.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public long NodeId { get; set; }
+		/// <summary>
+		/// Gets or sets Bounds of the layer in absolute page coordinates.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public IntRect Bounds { get; set; }
+		/// <summary>
+		/// Gets or sets Estimated memory used by this layer.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public long Memory { get; set; }
+		/// <summary>
+		/// Gets or sets The bounds of the composited layer.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public IntRect CompositedBounds { get; set; }
+		/// <summary>
+		/// Gets or sets Indicates whether this layer is associated with an element hosted in a shadow tree.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public bool IsInShadowTree { get; set; }
+		/// <summary>
+		/// Gets or sets Indicates whether this layer was used to provide a reflection for the element.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public bool IsReflection { get; set; }
+		/// <summary>
+		/// Gets or sets Indicates whether the layer is attached to a pseudo element that is CSS generated content.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public bool IsGeneratedContent { get; set; }
+		/// <summary>
+		/// Gets or sets Indicates whether the layer was created for a CSS anonymous block or box.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public bool IsAnonymous { get; set; }
+		/// <summary>
+		/// Gets or sets The id for the pseudo element associated with this layer.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public string PseudoElementId { get; set; }
+		/// <summary>
+		/// Gets or sets The name of the CSS pseudo-element that prompted the layer to be generated.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public string PseudoElement { get; set; }
 	}
 }

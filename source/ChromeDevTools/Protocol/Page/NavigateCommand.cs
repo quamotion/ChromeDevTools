@@ -15,6 +15,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 		/// Gets or sets URL to navigate the page to.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Url { get; set; }
 	}
 }

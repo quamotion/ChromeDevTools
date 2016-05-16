@@ -15,6 +15,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets The css style sheet identifier where a new rule should be inserted.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string StyleSheetId { get; set; }
 		/// <summary>
 		/// Gets or sets The text of a new rule.
@@ -26,5 +27,10 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
 		public SourceRange Location { get; set; }
+		/// <summary>
+		/// Gets or sets Selector
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public string Selector { get; set; }
 	}
 }

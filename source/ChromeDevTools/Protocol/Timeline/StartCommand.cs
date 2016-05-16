@@ -15,6 +15,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Timeline
 		/// Gets or sets Samples JavaScript stack traces up to <code>maxCallStackDepth</code>, defaults to 5.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long MaxCallStackDepth { get; set; }
 		/// <summary>
 		/// Gets or sets Whether instrumentation events should be buffered and returned upon <code>stop</code> call.

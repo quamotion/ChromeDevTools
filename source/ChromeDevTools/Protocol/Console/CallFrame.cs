@@ -14,6 +14,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Console
 		/// Gets or sets JavaScript function name.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string FunctionName { get; set; }
 		/// <summary>
 		/// Gets or sets JavaScript script id.
@@ -24,16 +25,19 @@ namespace MasterDevs.ChromeDevTools.Protocol.Console
 		/// Gets or sets JavaScript script name or url.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Url { get; set; }
 		/// <summary>
 		/// Gets or sets JavaScript script line number.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long LineNumber { get; set; }
 		/// <summary>
 		/// Gets or sets JavaScript script column number.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long ColumnNumber { get; set; }
 	}
 }

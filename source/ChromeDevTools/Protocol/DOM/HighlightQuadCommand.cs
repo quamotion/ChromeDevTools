@@ -15,16 +15,24 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 		/// Gets or sets Quad to highlight
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public double[] Quad { get; set; }
 		/// <summary>
 		/// Gets or sets The highlight fill color (default: transparent).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public RGBA Color { get; set; }
 		/// <summary>
 		/// Gets or sets The highlight outline color (default: transparent).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public RGBA OutlineColor { get; set; }
+		/// <summary>
+		/// Gets or sets Indicates whether the provided parameters are in page coordinates or in viewport coordinates (the default).
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public bool UsePageCoordinates { get; set; }
 	}
 }

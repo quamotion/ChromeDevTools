@@ -15,6 +15,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 		/// Gets or sets DOM Event name to stop on (any DOM event will do).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string EventName { get; set; }
 		/// <summary>
 		/// Gets or sets EventTarget interface name to stop on. If equal to <code>"*"</code> or not provided, will stop on any EventTarget.

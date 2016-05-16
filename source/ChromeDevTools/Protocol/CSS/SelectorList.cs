@@ -19,6 +19,12 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets Rule selector text.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Text { get; set; }
+		/// <summary>
+		/// Gets or sets Rule selector range in the underlying resource (if available).
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public SourceRange Range { get; set; }
 	}
 }

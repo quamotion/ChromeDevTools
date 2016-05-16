@@ -15,6 +15,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets The newly created rule.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public CSSRule Rule { get; set; }
 	}
 }

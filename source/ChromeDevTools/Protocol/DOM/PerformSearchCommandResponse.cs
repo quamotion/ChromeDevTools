@@ -15,11 +15,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 		/// Gets or sets Unique search session identifier.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string SearchId { get; set; }
 		/// <summary>
 		/// Gets or sets Number of search results.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long ResultCount { get; set; }
 	}
 }

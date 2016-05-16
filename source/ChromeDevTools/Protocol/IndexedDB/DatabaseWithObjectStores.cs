@@ -14,6 +14,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 		/// Gets or sets Database name.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Name { get; set; }
 		/// <summary>
 		/// Gets or sets Deprecated string database version.
@@ -29,6 +30,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 		/// Gets or sets Object stores in this database.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public ObjectStore[] ObjectStores { get; set; }
 	}
 }

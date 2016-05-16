@@ -15,16 +15,19 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets CSS rules matching this node, from all applicable stylesheets.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public RuleMatch[] MatchedCSSRules { get; set; }
 		/// <summary>
 		/// Gets or sets Pseudo style matches for this node.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public PseudoIdMatches[] PseudoElements { get; set; }
 		/// <summary>
 		/// Gets or sets A chain of inherited styles (from the immediate node parent up to the DOM tree root).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public InheritedStyleEntry[] Inherited { get; set; }
 	}
 }

@@ -39,11 +39,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 		/// Gets or sets Started connecting to the remote host.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public double ConnectStart { get; set; }
 		/// <summary>
 		/// Gets or sets Connected to the remote host.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public double ConnectEnd { get; set; }
 		/// <summary>
 		/// Gets or sets Started SSL handshake.
@@ -85,5 +87,35 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
 		public double ReceiveHeadersEnd { get; set; }
+		/// <summary>
+		/// Gets or sets Timing's navigationStart is a baseline in seconds, while the other numbers are ticks in milliseconds relatively to this navigationStart.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public double NavigationStart { get; set; }
+		/// <summary>
+		/// Gets or sets Started DNS address resolve.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public double DomainLookupStart { get; set; }
+		/// <summary>
+		/// Gets or sets Finished DNS address resolve.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public double DomainLookupEnd { get; set; }
+		/// <summary>
+		/// Gets or sets Started SSL handshake.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public double SecureConnectionStart { get; set; }
+		/// <summary>
+		/// Gets or sets Started sending request.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public double RequestStart { get; set; }
+		/// <summary>
+		/// Gets or sets Started receiving response headers.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public double ResponseStart { get; set; }
 	}
 }

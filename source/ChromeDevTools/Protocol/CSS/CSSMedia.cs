@@ -14,16 +14,19 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets Media query text.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Text { get; set; }
 		/// <summary>
 		/// Gets or sets Source of the media query: "mediaRule" if specified by a @media rule, "importRule" if specified by an @import rule, "linkedSheet" if specified by a "media" attribute in a linked stylesheet's LINK tag, "inlineSheet" if specified by a "media" attribute in an inline stylesheet's STYLE tag.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Source { get; set; }
 		/// <summary>
 		/// Gets or sets URL of the document containing the media query description.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string SourceURL { get; set; }
 		/// <summary>
 		/// Gets or sets The associated rule (@media or @import) header range in the enclosing stylesheet (if available).
@@ -40,5 +43,10 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
 		public MediaQuery[] MediaList { get; set; }
+		/// <summary>
+		/// Gets or sets Line in the document containing the media query (not defined for the "stylesheet" source).
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public long SourceLine { get; set; }
 	}
 }

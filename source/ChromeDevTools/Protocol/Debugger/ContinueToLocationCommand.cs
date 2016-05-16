@@ -15,6 +15,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 		/// Gets or sets Location to continue to.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Location Location { get; set; }
 		/// <summary>
 		/// Gets or sets Allows breakpoints at the intemediate positions inside statements.

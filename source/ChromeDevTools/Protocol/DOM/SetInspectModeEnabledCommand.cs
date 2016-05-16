@@ -15,6 +15,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 		/// Gets or sets True to enable inspection mode, false to disable it.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool Enabled { get; set; }
 		/// <summary>
 		/// Gets or sets True to enable inspection mode for user agent shadow DOM.
@@ -25,6 +26,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 		/// Gets or sets A descriptor for the highlight appearance of hovered-over nodes. May be omitted if <code>enabled == false</code>.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public HighlightConfig HighlightConfig { get; set; }
 	}
 }

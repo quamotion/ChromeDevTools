@@ -14,6 +14,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets The stylesheet identifier.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string StyleSheetId { get; set; }
 		/// <summary>
 		/// Gets or sets Owner frame identifier.
@@ -24,6 +25,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets Stylesheet resource URL.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string SourceURL { get; set; }
 		/// <summary>
 		/// Gets or sets URL of source map associated with the stylesheet (if any).
@@ -34,11 +36,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets Stylesheet origin.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public StyleSheetOrigin Origin { get; set; }
 		/// <summary>
 		/// Gets or sets Stylesheet title.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Title { get; set; }
 		/// <summary>
 		/// Gets or sets The backend id for the owner node of the stylesheet.
@@ -49,6 +53,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets Denotes whether the stylesheet is disabled.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool Disabled { get; set; }
 		/// <summary>
 		/// Gets or sets Whether the sourceURL field value comes from the sourceURL comment.
@@ -59,16 +64,19 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets Whether this stylesheet is created for STYLE tag by parser. This flag is not set for document.written STYLE tags.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool IsInline { get; set; }
 		/// <summary>
 		/// Gets or sets Line offset of the stylesheet within the resource (zero based).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public double StartLine { get; set; }
 		/// <summary>
 		/// Gets or sets Column offset of the stylesheet within the resource (zero based).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public double StartColumn { get; set; }
 	}
 }

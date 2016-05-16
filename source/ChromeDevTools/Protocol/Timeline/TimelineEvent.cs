@@ -19,6 +19,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Timeline
 		/// Gets or sets Event data.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public object Data { get; set; }
 		/// <summary>
 		/// Gets or sets Start time.
@@ -34,6 +35,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Timeline
 		/// Gets or sets Nested records.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public TimelineEvent[] Children { get; set; }
 		/// <summary>
 		/// Gets or sets If present, identifies the thread that produced the event.

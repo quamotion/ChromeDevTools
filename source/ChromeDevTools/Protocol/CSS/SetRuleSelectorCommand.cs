@@ -25,6 +25,12 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 		/// Gets or sets Selector
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Selector { get; set; }
+		/// <summary>
+		/// Gets or sets RuleId
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public CSSRuleId RuleId { get; set; }
 	}
 }

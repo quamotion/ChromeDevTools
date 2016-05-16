@@ -15,6 +15,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 		/// Gets or sets Event name.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string EventName { get; set; }
 		/// <summary>
 		/// Gets or sets EventTarget interface name.

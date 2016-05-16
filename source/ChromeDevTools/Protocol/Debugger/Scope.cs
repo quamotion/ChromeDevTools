@@ -19,6 +19,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 		/// Gets or sets Object representing the scope. For <code>global</code> and <code>with</code> scopes it represents the actual object; for the rest of the scopes, it is artificial transient object enumerating scope variables as its properties.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Runtime.RemoteObject Object { get; set; }
 	}
 }

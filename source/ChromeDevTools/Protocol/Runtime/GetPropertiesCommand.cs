@@ -15,11 +15,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 		/// Gets or sets Identifier of the object to return properties for.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string ObjectId { get; set; }
 		/// <summary>
 		/// Gets or sets If true, returns properties belonging only to the element itself, not to its prototype chain.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool OwnProperties { get; set; }
 		/// <summary>
 		/// Gets or sets If true, returns accessor properties (with getter/setter) only; internal properties are not returned either.
@@ -30,6 +32,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 		/// Gets or sets Whether preview should be generated for the results.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public bool GeneratePreview { get; set; }
 	}
 }

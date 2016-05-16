@@ -14,11 +14,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 		/// Gets or sets Call frame identifier. This identifier is only valid while the virtual machine is paused.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string CallFrameId { get; set; }
 		/// <summary>
 		/// Gets or sets Name of the JavaScript function called on this call frame.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string FunctionName { get; set; }
 		/// <summary>
 		/// Gets or sets Location in the source code.
@@ -29,16 +31,19 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 		/// Gets or sets Location in the source code.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Location Location { get; set; }
 		/// <summary>
 		/// Gets or sets Scope chain for this call frame.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Scope[] ScopeChain { get; set; }
 		/// <summary>
 		/// Gets or sets <code>this</code> object for this call frame.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Runtime.RemoteObject This { get; set; }
 		/// <summary>
 		/// Gets or sets The value being returned, if the function is at return point.

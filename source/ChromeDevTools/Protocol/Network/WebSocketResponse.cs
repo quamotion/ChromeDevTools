@@ -14,16 +14,19 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 		/// Gets or sets HTTP response status code.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public double Status { get; set; }
 		/// <summary>
 		/// Gets or sets HTTP response status text.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string StatusText { get; set; }
 		/// <summary>
 		/// Gets or sets HTTP response headers.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public Dictionary<string, string> Headers { get; set; }
 		/// <summary>
 		/// Gets or sets HTTP response headers text.

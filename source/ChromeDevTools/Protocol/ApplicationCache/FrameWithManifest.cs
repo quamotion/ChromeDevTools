@@ -19,11 +19,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.ApplicationCache
 		/// Gets or sets Manifest URL.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string ManifestURL { get; set; }
 		/// <summary>
 		/// Gets or sets Application cache status.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long Status { get; set; }
 	}
 }

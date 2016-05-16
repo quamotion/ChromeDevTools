@@ -15,11 +15,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 		/// Gets or sets Object properties.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public PropertyDescriptor[] Result { get; set; }
 		/// <summary>
 		/// Gets or sets Internal object properties (only of the element itself).
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public InternalPropertyDescriptor[] InternalProperties { get; set; }
 	}
 }

@@ -15,26 +15,35 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 		/// Gets or sets Line number to set breakpoint at.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long LineNumber { get; set; }
 		/// <summary>
 		/// Gets or sets URL of the resources to set breakpoint on.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string Url { get; set; }
 		/// <summary>
 		/// Gets or sets Regex pattern for the URLs of the resources to set breakpoints on. Either <code>url</code> or <code>urlRegex</code> must be specified.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public string UrlRegex { get; set; }
 		/// <summary>
 		/// Gets or sets Offset in the line to set breakpoint at.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
+		[SupportedBy("iOS-9.3")]
 		public long ColumnNumber { get; set; }
 		/// <summary>
 		/// Gets or sets Expression to use as a breakpoint condition. When specified, debugger will only stop on the breakpoint if this expression evaluates to true.
 		/// </summary>
 		[SupportedBy("Chrome-Tip")]
 		public string Condition { get; set; }
+		/// <summary>
+		/// Gets or sets Options to apply to this breakpoint to modify its behavior.
+		/// </summary>
+		[SupportedBy("iOS-9.3")]
+		public BreakpointOptions Options { get; set; }
 	}
 }
