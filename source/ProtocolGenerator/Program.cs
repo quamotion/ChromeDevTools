@@ -505,7 +505,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
         {
             foreach(var browser in supportedBy)
             {
-                sb.AppendLine($"\t[SupportedBy(\"{browser}\")");
+                sb.AppendLine($"\t[SupportedBy(\"{browser}\")]");
             }
         }
 
