@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Enables promise tracking, information about <code>Promise</code>s created or updated will now be stored on the backend.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.EnablePromiseTracker)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnablePromiseTrackerCommandResponse
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Continues execution until specific location is reached.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.ContinueToLocation)]
+	[SupportedBy("Chrome-Tip")]
 	public class ContinueToLocationCommandResponse
 	{
 	}

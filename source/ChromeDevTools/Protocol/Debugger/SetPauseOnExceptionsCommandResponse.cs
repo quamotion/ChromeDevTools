@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.SetPauseOnExceptions)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetPauseOnExceptionsCommandResponse
 	{
 	}

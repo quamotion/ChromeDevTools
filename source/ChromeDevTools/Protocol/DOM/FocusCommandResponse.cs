@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Focuses the given element.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.Focus)]
+	[SupportedBy("Chrome-Tip")]
 	public class FocusCommandResponse
 	{
 	}

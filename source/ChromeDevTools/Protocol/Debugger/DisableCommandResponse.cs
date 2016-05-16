@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Disables debugger for given page.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommandResponse
 	{
 	}

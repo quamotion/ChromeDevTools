@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Re-does the last undone action.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.Redo)]
+	[SupportedBy("Chrome-Tip")]
 	public class RedoCommandResponse
 	{
 	}

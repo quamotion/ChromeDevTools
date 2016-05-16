@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 	/// Sets breakpoint on XMLHttpRequest.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOMDebugger.SetXHRBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetXHRBreakpointCommandResponse
 	{
 	}

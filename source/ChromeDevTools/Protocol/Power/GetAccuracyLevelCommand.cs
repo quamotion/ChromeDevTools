@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Power
 	/// Describes the accuracy level of the data provider.
 	/// </summary>
 	[Command(ProtocolName.Power.GetAccuracyLevel)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetAccuracyLevelCommand
 	{
 	}

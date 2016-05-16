@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Inspector
 	/// Enables inspector domain notifications.
 	/// </summary>
 	[CommandResponse(ProtocolName.Inspector.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

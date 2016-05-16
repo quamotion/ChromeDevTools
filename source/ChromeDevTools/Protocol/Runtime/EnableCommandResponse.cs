@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// Enables reporting of execution contexts creation by means of <code>executionContextCreated</code> event. When the reporting gets enabled the event will be sent immediately for each existing execution context.
 	/// </summary>
 	[CommandResponse(ProtocolName.Runtime.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 	/// Disables events from backend.
 	/// </summary>
 	[CommandResponse(ProtocolName.IndexedDB.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommandResponse
 	{
 	}

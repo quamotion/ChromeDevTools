@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Steps into the function call.
 	/// </summary>
 	[Command(ProtocolName.Debugger.StepInto)]
+	[SupportedBy("Chrome-Tip")]
 	public class StepIntoCommand
 	{
 	}

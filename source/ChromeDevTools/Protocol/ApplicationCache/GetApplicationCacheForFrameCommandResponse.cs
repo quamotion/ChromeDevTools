@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.ApplicationCache
 	/// Returns relevant application cache data for the document in given frame.
 	/// </summary>
 	[CommandResponse(ProtocolName.ApplicationCache.GetApplicationCacheForFrame)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetApplicationCacheForFrameCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Relevant application cache data for the document in given frame.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public ApplicationCache ApplicationCache { get; set; }
 	}
 }

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Returns call stack including variables changed since VM was paused. VM must be paused.
 	/// </summary>
 	[Command(ProtocolName.Debugger.GetBacktrace)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetBacktraceCommand
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Clears the overridden Device Orientation.
 	/// </summary>
 	[Command(ProtocolName.Page.ClearDeviceOrientationOverride)]
+	[SupportedBy("Chrome-Tip")]
 	public class ClearDeviceOrientationOverrideCommand
 	{
 	}

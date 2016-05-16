@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Tells whether screencast is supported.
 	/// </summary>
 	[Command(ProtocolName.Page.CanScreencast)]
+	[SupportedBy("Chrome-Tip")]
 	public class CanScreencastCommand
 	{
 	}

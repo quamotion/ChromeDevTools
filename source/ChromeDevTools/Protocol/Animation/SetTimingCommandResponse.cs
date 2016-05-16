@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Animation
 	/// Sets the timing of an animation node.
 	/// </summary>
 	[CommandResponse(ProtocolName.Animation.SetTiming)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetTimingCommandResponse
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Disables promise tracking.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.DisablePromiseTracker)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisablePromiseTrackerCommandResponse
 	{
 	}

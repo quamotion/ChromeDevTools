@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Removes AsyncOperation breakpoint.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.RemoveAsyncOperationBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class RemoveAsyncOperationBreakpointCommandResponse
 	{
 	}

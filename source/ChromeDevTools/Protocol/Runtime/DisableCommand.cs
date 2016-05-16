@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// Disables reporting of execution contexts creation.
 	/// </summary>
 	[Command(ProtocolName.Runtime.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommand
 	{
 	}

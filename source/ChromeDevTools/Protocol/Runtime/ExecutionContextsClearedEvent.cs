@@ -6,6 +6,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// Issued when all executionContexts were cleared in browser
 	/// </summary>
 	[Event(ProtocolName.Runtime.ExecutionContextsCleared)]
+	[SupportedBy("Chrome-Tip")]
 	public class ExecutionContextsClearedEvent
 	{
 	}

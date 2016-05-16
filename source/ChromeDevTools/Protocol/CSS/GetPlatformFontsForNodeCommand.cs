@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Requests information about platform fonts which we used to render child TextNodes in the given node.
 	/// </summary>
 	[Command(ProtocolName.CSS.GetPlatformFontsForNode)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetPlatformFontsForNodeCommand
 	{
 		/// <summary>
 		/// Gets or sets NodeId
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long NodeId { get; set; }
 	}
 }

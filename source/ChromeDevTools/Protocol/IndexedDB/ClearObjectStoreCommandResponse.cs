@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 	/// Clears all entries from an object store.
 	/// </summary>
 	[CommandResponse(ProtocolName.IndexedDB.ClearObjectStore)]
+	[SupportedBy("Chrome-Tip")]
 	public class ClearObjectStoreCommandResponse
 	{
 	}

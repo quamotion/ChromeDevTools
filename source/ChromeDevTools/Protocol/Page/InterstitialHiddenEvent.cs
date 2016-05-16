@@ -6,6 +6,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Fired when interstitial page was hidden
 	/// </summary>
 	[Event(ProtocolName.Page.InterstitialHidden)]
+	[SupportedBy("Chrome-Tip")]
 	public class InterstitialHiddenEvent
 	{
 	}

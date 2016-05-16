@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 	/// Sets breakpoint on particular operation with DOM.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOMDebugger.SetDOMBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetDOMBreakpointCommandResponse
 	{
 	}

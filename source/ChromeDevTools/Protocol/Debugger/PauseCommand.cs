@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Stops on the next JavaScript statement.
 	/// </summary>
 	[Command(ProtocolName.Debugger.Pause)]
+	[SupportedBy("Chrome-Tip")]
 	public class PauseCommand
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Returns the root DOM node to the caller.
 	/// </summary>
 	[Command(ProtocolName.DOM.GetDocument)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetDocumentCommand
 	{
 	}

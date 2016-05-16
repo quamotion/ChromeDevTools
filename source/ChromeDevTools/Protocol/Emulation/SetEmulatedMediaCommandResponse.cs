@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Emulation
 	/// Emulates the given media for CSS media queries.
 	/// </summary>
 	[CommandResponse(ProtocolName.Emulation.SetEmulatedMedia)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetEmulatedMediaCommandResponse
 	{
 	}

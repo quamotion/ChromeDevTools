@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Disables page domain notifications.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommandResponse
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 	/// Sets breakpoint on particular DOM event.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOMDebugger.SetEventListenerBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetEventListenerBreakpointCommandResponse
 	{
 	}

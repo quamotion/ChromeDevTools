@@ -7,15 +7,18 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// <summary>
 	/// Object internal property descriptor. This property isn't normally visible in JavaScript code.
 	/// </summary>
+	[SupportedBy("Chrome-Tip")]
 	public class InternalPropertyDescriptor
 	{
 		/// <summary>
 		/// Gets or sets Conventional property name.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string Name { get; set; }
 		/// <summary>
 		/// Gets or sets The value associated with the property.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public RemoteObject Value { get; set; }
 	}
 }

@@ -7,19 +7,23 @@ namespace MasterDevs.ChromeDevTools.Protocol.CacheStorage
 	/// <summary>
 	/// Cache identifier.
 	/// </summary>
+	[SupportedBy("Chrome-Tip")]
 	public class Cache
 	{
 		/// <summary>
 		/// Gets or sets An opaque unique id of the cache.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string CacheId { get; set; }
 		/// <summary>
 		/// Gets or sets Security origin of the cache.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string SecurityOrigin { get; set; }
 		/// <summary>
 		/// Gets or sets The name of the cache.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string CacheName { get; set; }
 	}
 }

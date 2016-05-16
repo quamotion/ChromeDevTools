@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.FileSystem
 	/// Disables events from backend.
 	/// </summary>
 	[Command(ProtocolName.FileSystem.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommand
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Clears the overriden Geolocation Position and Error.
 	/// </summary>
 	[Command(ProtocolName.Page.ClearGeolocationOverride)]
+	[SupportedBy("Chrome-Tip")]
 	public class ClearGeolocationOverrideCommand
 	{
 	}

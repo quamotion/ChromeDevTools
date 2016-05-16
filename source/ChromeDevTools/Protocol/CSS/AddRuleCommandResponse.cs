@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Inserts a new rule with the given <code>ruleText</code> in a stylesheet with given <code>styleSheetId</code>, at the position specified by <code>location</code>.
 	/// </summary>
 	[CommandResponse(ProtocolName.CSS.AddRule)]
+	[SupportedBy("Chrome-Tip")]
 	public class AddRuleCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets The newly created rule.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public CSSRule Rule { get; set; }
 	}
 }

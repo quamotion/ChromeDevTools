@@ -5,11 +5,13 @@ using System.Collections.Generic;
 namespace MasterDevs.ChromeDevTools.Protocol.Worker
 {
 	[Command(ProtocolName.Worker.DisconnectFromWorker)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisconnectFromWorkerCommand
 	{
 		/// <summary>
 		/// Gets or sets WorkerId
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string WorkerId { get; set; }
 	}
 }

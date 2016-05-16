@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Sets the new stylesheet text.
 	/// </summary>
 	[CommandResponse(ProtocolName.CSS.SetStyleSheetText)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetStyleSheetTextCommandResponse
 	{
 	}

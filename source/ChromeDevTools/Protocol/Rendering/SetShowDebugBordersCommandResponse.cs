@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Rendering
 	/// Requests that backend shows debug borders on layers
 	/// </summary>
 	[CommandResponse(ProtocolName.Rendering.SetShowDebugBorders)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetShowDebugBordersCommandResponse
 	{
 	}

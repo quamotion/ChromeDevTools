@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Emulation
 	/// Tells whether emulation is supported.
 	/// </summary>
 	[Command(ProtocolName.Emulation.CanEmulate)]
+	[SupportedBy("Chrome-Tip")]
 	public class CanEmulateCommand
 	{
 	}

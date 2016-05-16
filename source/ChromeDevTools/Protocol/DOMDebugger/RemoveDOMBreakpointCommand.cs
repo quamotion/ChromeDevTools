@@ -8,15 +8,18 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 	/// Removes DOM breakpoint that was set using <code>setDOMBreakpoint</code>.
 	/// </summary>
 	[Command(ProtocolName.DOMDebugger.RemoveDOMBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class RemoveDOMBreakpointCommand
 	{
 		/// <summary>
 		/// Gets or sets Identifier of the node to remove breakpoint from.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long NodeId { get; set; }
 		/// <summary>
 		/// Gets or sets Type of the breakpoint to remove.
 		/// </summary>
-		public DOMBreakpointType Type { get; set; }
+		[SupportedBy("Chrome-Tip")]
+		public string Type { get; set; }
 	}
 }

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMStorage
 	/// Disables storage tracking, prevents storage events from being sent to the client.
 	/// </summary>
 	[Command(ProtocolName.DOMStorage.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommand
 	{
 	}

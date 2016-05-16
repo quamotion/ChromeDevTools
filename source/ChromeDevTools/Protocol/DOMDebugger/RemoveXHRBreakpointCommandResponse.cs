@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 	/// Removes breakpoint from XMLHttpRequest.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOMDebugger.RemoveXHRBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class RemoveXHRBreakpointCommandResponse
 	{
 	}

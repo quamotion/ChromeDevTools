@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Animation
 	/// Sets the current time of the document timeline.
 	/// </summary>
 	[CommandResponse(ProtocolName.Animation.SetCurrentTime)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetCurrentTimeCommandResponse
 	{
 	}

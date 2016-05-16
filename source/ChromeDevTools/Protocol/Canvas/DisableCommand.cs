@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Canvas
 	/// Disables Canvas inspection.
 	/// </summary>
 	[Command(ProtocolName.Canvas.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommand
 	{
 	}

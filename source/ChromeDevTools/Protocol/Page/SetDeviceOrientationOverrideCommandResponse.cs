@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Overrides the Device Orientation.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.SetDeviceOrientationOverride)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetDeviceOrientationOverrideCommandResponse
 	{
 	}

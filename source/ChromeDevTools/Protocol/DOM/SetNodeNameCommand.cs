@@ -8,15 +8,18 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Sets node name for a node with given id.
 	/// </summary>
 	[Command(ProtocolName.DOM.SetNodeName)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetNodeNameCommand
 	{
 		/// <summary>
 		/// Gets or sets Id of the node to set name for.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long NodeId { get; set; }
 		/// <summary>
 		/// Gets or sets New node's name.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string Name { get; set; }
 	}
 }

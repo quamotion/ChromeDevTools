@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Profiler
 	/// Changes CPU profiler sampling interval. Must be called before CPU profiles recording started.
 	/// </summary>
 	[CommandResponse(ProtocolName.Profiler.SetSamplingInterval)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetSamplingIntervalCommandResponse
 	{
 	}

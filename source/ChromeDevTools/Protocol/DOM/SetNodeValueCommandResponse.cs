@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Sets node value for a node with given id.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.SetNodeValue)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetNodeValueCommandResponse
 	{
 	}

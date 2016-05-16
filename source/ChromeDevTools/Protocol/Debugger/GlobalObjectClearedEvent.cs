@@ -6,6 +6,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Called when global has been cleared and debugger client should reset its state. Happens upon navigation or reload.
 	/// </summary>
 	[Event(ProtocolName.Debugger.GlobalObjectCleared)]
+	[SupportedBy("Chrome-Tip")]
 	public class GlobalObjectClearedEvent
 	{
 	}

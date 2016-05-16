@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Ensures that the given node will have specified pseudo-classes whenever its style is computed by the browser.
 	/// </summary>
 	[CommandResponse(ProtocolName.CSS.ForcePseudoState)]
+	[SupportedBy("Chrome-Tip")]
 	public class ForcePseudoStateCommandResponse
 	{
 	}

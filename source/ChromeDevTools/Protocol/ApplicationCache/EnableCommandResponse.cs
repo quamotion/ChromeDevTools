@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.ApplicationCache
 	/// Enables application cache domain notifications.
 	/// </summary>
 	[CommandResponse(ProtocolName.ApplicationCache.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

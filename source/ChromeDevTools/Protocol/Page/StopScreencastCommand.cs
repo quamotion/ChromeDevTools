@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Stops sending each frame in the <code>screencastFrame</code>.
 	/// </summary>
 	[Command(ProtocolName.Page.StopScreencast)]
+	[SupportedBy("Chrome-Tip")]
 	public class StopScreencastCommand
 	{
 	}

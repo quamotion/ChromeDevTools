@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Steps into the first async operation handler that was scheduled by or after the current statement.
 	/// </summary>
 	[Command(ProtocolName.Debugger.StepIntoAsync)]
+	[SupportedBy("Chrome-Tip")]
 	public class StepIntoAsyncCommand
 	{
 	}

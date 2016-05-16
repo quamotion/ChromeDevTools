@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Animation
 	/// Returns animation players relevant to the node.
 	/// </summary>
 	[CommandResponse(ProtocolName.Animation.GetAnimationPlayersForNode)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetAnimationPlayersForNodeCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Array of animation players.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public AnimationPlayer[] AnimationPlayers { get; set; }
 	}
 }

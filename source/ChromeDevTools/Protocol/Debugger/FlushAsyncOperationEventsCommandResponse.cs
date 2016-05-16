@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Fires pending <code>asyncOperationStarted</code> events (if any), as if a debugger stepping session has just been started.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.FlushAsyncOperationEvents)]
+	[SupportedBy("Chrome-Tip")]
 	public class FlushAsyncOperationEventsCommandResponse
 	{
 	}

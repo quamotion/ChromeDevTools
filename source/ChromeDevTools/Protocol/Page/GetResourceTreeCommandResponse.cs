@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Returns present frame / resource tree structure.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.GetResourceTree)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetResourceTreeCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Present frame / resource tree structure.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public FrameResourceTree FrameTree { get; set; }
 	}
 }

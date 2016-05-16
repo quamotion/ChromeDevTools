@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Removes node with given id.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.RemoveNode)]
+	[SupportedBy("Chrome-Tip")]
 	public class RemoveNodeCommandResponse
 	{
 	}

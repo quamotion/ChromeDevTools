@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Tracing
 	/// Start trace events collection.
 	/// </summary>
 	[CommandResponse(ProtocolName.Tracing.Start)]
+	[SupportedBy("Chrome-Tip")]
 	public class StartCommandResponse
 	{
 	}

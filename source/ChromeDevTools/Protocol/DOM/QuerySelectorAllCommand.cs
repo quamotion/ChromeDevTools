@@ -8,15 +8,18 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Executes <code>querySelectorAll</code> on a given node.
 	/// </summary>
 	[Command(ProtocolName.DOM.QuerySelectorAll)]
+	[SupportedBy("Chrome-Tip")]
 	public class QuerySelectorAllCommand
 	{
 		/// <summary>
 		/// Gets or sets Id of the node to query upon.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long NodeId { get; set; }
 		/// <summary>
 		/// Gets or sets Selector string.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string Selector { get; set; }
 	}
 }

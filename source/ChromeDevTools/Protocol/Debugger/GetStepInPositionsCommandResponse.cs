@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Lists all positions where step-in is possible for a current statement in a specified call frame
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.GetStepInPositions)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetStepInPositionsCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets experimental
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public Location[] StepInPositions { get; set; }
 	}
 }

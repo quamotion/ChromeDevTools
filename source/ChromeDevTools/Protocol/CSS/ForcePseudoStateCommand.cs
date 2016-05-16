@@ -8,15 +8,18 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Ensures that the given node will have specified pseudo-classes whenever its style is computed by the browser.
 	/// </summary>
 	[Command(ProtocolName.CSS.ForcePseudoState)]
+	[SupportedBy("Chrome-Tip")]
 	public class ForcePseudoStateCommand
 	{
 		/// <summary>
 		/// Gets or sets The element id for which to force the pseudo state.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long NodeId { get; set; }
 		/// <summary>
 		/// Gets or sets Element pseudo classes to force when computing the element's style.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string[] ForcedPseudoClasses { get; set; }
 	}
 }

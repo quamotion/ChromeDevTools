@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Specifies whether to always send extra HTTP headers with the requests from this page.
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.SetExtraHTTPHeaders)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetExtraHTTPHeadersCommandResponse
 	{
 	}

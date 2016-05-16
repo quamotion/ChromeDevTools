@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Timeline
 	/// Deprecated.
 	/// </summary>
 	[Command(ProtocolName.Timeline.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommand
 	{
 	}

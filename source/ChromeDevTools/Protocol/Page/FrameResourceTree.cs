@@ -7,15 +7,18 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// <summary>
 	/// Information about the Frame hierarchy along with their cached resources.
 	/// </summary>
+	[SupportedBy("Chrome-Tip")]
 	public class FrameResourceTree
 	{
 		/// <summary>
 		/// Gets or sets Frame information for this tree item.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public Frame Frame { get; set; }
 		/// <summary>
 		/// Gets or sets Child frames.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public FrameResourceTree[] ChildFrames { get; set; }
 		public class ResourcesArray
 		{
@@ -44,6 +47,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 		/// <summary>
 		/// Gets or sets Information about frame resources.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public ResourcesArray[] Resources { get; set; }
 	}
 }

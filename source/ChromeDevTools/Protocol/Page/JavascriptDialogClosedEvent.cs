@@ -6,6 +6,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) has been closed.
 	/// </summary>
 	[Event(ProtocolName.Page.JavascriptDialogClosed)]
+	[SupportedBy("Chrome-Tip")]
 	public class JavascriptDialogClosedEvent
 	{
 	}

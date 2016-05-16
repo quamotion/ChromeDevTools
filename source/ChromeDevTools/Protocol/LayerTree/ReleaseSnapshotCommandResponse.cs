@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 	/// Releases layer snapshot captured by the back-end.
 	/// </summary>
 	[CommandResponse(ProtocolName.LayerTree.ReleaseSnapshot)]
+	[SupportedBy("Chrome-Tip")]
 	public class ReleaseSnapshotCommandResponse
 	{
 	}

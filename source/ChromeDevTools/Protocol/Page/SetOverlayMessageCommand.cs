@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Sets overlay message.
 	/// </summary>
 	[Command(ProtocolName.Page.SetOverlayMessage)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetOverlayMessageCommand
 	{
 		/// <summary>
 		/// Gets or sets Overlay message to display when paused in debugger.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string Message { get; set; }
 	}
 }

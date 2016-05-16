@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 	/// Returns the layer snapshot identifier.
 	/// </summary>
 	[CommandResponse(ProtocolName.LayerTree.MakeSnapshot)]
+	[SupportedBy("Chrome-Tip")]
 	public class MakeSnapshotCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets The id of the layer snapshot.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string SnapshotId { get; set; }
 	}
 }

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Input
 	/// Dispatches a key event to the page.
 	/// </summary>
 	[CommandResponse(ProtocolName.Input.DispatchKeyEvent)]
+	[SupportedBy("Chrome-Tip")]
 	public class DispatchKeyEventCommandResponse
 	{
 	}

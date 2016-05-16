@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Enables page domain notifications.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

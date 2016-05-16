@@ -4,6 +4,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM{
 	/// <summary>
 	/// Pseudo element type.
 	/// </summary>
+	[SupportedBy("Chrome-Tip")]
 	public enum PseudoType
 	{
 			First_line,

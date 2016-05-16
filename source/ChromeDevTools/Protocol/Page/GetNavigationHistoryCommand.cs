@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Returns navigation history for the current page.
 	/// </summary>
 	[Command(ProtocolName.Page.GetNavigationHistory)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetNavigationHistoryCommand
 	{
 	}

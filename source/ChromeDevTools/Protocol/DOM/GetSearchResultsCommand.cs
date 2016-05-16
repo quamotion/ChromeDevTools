@@ -8,19 +8,23 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Returns search results from given <code>fromIndex</code> to given <code>toIndex</code> from the sarch with the given identifier.
 	/// </summary>
 	[Command(ProtocolName.DOM.GetSearchResults)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetSearchResultsCommand
 	{
 		/// <summary>
 		/// Gets or sets Unique search session identifier.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string SearchId { get; set; }
 		/// <summary>
 		/// Gets or sets Start index of the search result to be returned.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long FromIndex { get; set; }
 		/// <summary>
 		/// Gets or sets End index of the search result to be returned.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long ToIndex { get; set; }
 	}
 }

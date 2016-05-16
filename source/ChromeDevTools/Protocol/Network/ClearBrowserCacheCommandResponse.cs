@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Clears browser cache.
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.ClearBrowserCache)]
+	[SupportedBy("Chrome-Tip")]
 	public class ClearBrowserCacheCommandResponse
 	{
 	}

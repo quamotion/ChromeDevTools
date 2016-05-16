@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// Releases all remote objects that belong to a given group.
 	/// </summary>
 	[Command(ProtocolName.Runtime.ReleaseObjectGroup)]
+	[SupportedBy("Chrome-Tip")]
 	public class ReleaseObjectGroupCommand
 	{
 		/// <summary>
 		/// Gets or sets Symbolic object group name.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string ObjectGroup { get; set; }
 	}
 }

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Database
 	/// Disables database tracking, prevents database events from being sent to the client.
 	/// </summary>
 	[CommandResponse(ProtocolName.Database.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommandResponse
 	{
 	}

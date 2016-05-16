@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Emulation
 	/// Sets a specified page scale factor.
 	/// </summary>
 	[CommandResponse(ProtocolName.Emulation.SetPageScaleFactor)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetPageScaleFactorCommandResponse
 	{
 	}

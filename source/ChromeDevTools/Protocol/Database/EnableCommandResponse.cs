@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Database
 	/// Enables database tracking, database events will now be delivered to the client.
 	/// </summary>
 	[CommandResponse(ProtocolName.Database.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

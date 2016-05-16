@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Disables the CSS agent for the given page.
 	/// </summary>
 	[Command(ProtocolName.CSS.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommand
 	{
 	}

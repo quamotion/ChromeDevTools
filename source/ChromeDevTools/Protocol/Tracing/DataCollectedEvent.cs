@@ -6,6 +6,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Tracing
 	/// Contains an bucket of collected trace events. When tracing is stopped collected events will be send as a sequence of dataCollected events followed by tracingComplete event.
 	/// </summary>
 	[Event(ProtocolName.Tracing.DataCollected)]
+	[SupportedBy("Chrome-Tip")]
 	public class DataCollectedEvent
 	{
 		public class ValueArray
@@ -15,6 +16,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Tracing
 		/// <summary>
 		/// Gets or sets Value
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public ValueArray[] Value { get; set; }
 	}
 }

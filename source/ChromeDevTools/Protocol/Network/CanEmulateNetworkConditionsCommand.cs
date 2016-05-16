@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Tells whether emulation of network conditions is supported.
 	/// </summary>
 	[Command(ProtocolName.Network.CanEmulateNetworkConditions)]
+	[SupportedBy("Chrome-Tip")]
 	public class CanEmulateNetworkConditionsCommand
 	{
 	}

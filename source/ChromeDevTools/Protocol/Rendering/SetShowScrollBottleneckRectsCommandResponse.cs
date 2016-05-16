@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Rendering
 	/// Requests that backend shows scroll bottleneck rects
 	/// </summary>
 	[CommandResponse(ProtocolName.Rendering.SetShowScrollBottleneckRects)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetShowScrollBottleneckRectsCommandResponse
 	{
 	}

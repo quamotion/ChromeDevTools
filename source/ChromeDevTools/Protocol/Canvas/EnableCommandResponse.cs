@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Canvas
 	/// Enables Canvas inspection.
 	/// </summary>
 	[CommandResponse(ProtocolName.Canvas.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

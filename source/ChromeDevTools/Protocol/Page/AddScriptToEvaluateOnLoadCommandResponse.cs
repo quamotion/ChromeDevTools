@@ -5,11 +5,13 @@ using System.Collections.Generic;
 namespace MasterDevs.ChromeDevTools.Protocol.Page
 {
 	[CommandResponse(ProtocolName.Page.AddScriptToEvaluateOnLoad)]
+	[SupportedBy("Chrome-Tip")]
 	public class AddScriptToEvaluateOnLoadCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Identifier of the added script.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string Identifier { get; set; }
 	}
 }

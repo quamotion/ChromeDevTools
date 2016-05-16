@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 	/// Removes breakpoint on particular DOM event.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOMDebugger.RemoveEventListenerBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class RemoveEventListenerBreakpointCommandResponse
 	{
 	}

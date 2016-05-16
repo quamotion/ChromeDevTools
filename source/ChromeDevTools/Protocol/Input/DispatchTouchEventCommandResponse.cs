@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Input
 	/// Dispatches a touch event to the page.
 	/// </summary>
 	[CommandResponse(ProtocolName.Input.DispatchTouchEvent)]
+	[SupportedBy("Chrome-Tip")]
 	public class DispatchTouchEventCommandResponse
 	{
 	}

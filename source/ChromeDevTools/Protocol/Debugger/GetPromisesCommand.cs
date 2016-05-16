@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Returns detailed information about all <code>Promise</code>s that were created or updated after the <code>enablePromiseTracker</code> command, and have not been garbage collected yet.
 	/// </summary>
 	[Command(ProtocolName.Debugger.GetPromises)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetPromisesCommand
 	{
 	}

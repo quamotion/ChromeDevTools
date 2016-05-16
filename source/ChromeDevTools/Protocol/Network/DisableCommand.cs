@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Disables network tracking, prevents network events from being sent to the client.
 	/// </summary>
 	[Command(ProtocolName.Network.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommand
 	{
 	}

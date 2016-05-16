@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Input
 	/// Synthesizes a tap gesture over a time period by issuing appropriate touch events.
 	/// </summary>
 	[CommandResponse(ProtocolName.Input.SynthesizeTapGesture)]
+	[SupportedBy("Chrome-Tip")]
 	public class SynthesizeTapGestureCommandResponse
 	{
 	}

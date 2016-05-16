@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Removes attribute with given name from an element with given id.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.RemoveAttribute)]
+	[SupportedBy("Chrome-Tip")]
 	public class RemoveAttributeCommandResponse
 	{
 	}

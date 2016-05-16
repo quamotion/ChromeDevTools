@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// Releases remote object with given id.
 	/// </summary>
 	[CommandResponse(ProtocolName.Runtime.ReleaseObject)]
+	[SupportedBy("Chrome-Tip")]
 	public class ReleaseObjectCommandResponse
 	{
 	}

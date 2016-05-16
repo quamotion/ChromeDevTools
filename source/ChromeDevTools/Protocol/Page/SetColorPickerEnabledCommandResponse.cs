@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Shows / hides color picker
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.SetColorPickerEnabled)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetColorPickerEnabledCommandResponse
 	{
 	}

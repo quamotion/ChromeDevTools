@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.CacheStorage
 	/// Deletes a cache.
 	/// </summary>
 	[Command(ProtocolName.CacheStorage.DeleteCache)]
+	[SupportedBy("Chrome-Tip")]
 	public class DeleteCacheCommand
 	{
 		/// <summary>
 		/// Gets or sets Id of cache for deletion.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string CacheId { get; set; }
 	}
 }

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Power
 	/// Start power events collection.
 	/// </summary>
 	[Command(ProtocolName.Power.Start)]
+	[SupportedBy("Chrome-Tip")]
 	public class StartCommand
 	{
 	}

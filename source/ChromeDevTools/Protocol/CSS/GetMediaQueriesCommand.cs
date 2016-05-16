@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Returns all media queries parsed by the rendering engine.
 	/// </summary>
 	[Command(ProtocolName.CSS.GetMediaQueries)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetMediaQueriesCommand
 	{
 	}

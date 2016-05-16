@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Inspector
 	/// Disables inspector domain notifications.
 	/// </summary>
 	[Command(ProtocolName.Inspector.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommand
 	{
 	}

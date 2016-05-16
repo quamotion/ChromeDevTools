@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Animation
 	/// Enables animation domain notifications.
 	/// </summary>
 	[Command(ProtocolName.Animation.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommand
 	{
 	}

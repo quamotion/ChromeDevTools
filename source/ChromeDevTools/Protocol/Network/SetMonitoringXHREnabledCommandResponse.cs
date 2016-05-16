@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Toggles monitoring of XMLHttpRequest. If <code>true</code>, console will receive messages upon each XHR issued.
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.SetMonitoringXHREnabled)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetMonitoringXHREnabledCommandResponse
 	{
 	}

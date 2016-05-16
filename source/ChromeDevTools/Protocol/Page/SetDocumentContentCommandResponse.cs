@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Sets given markup as the document's HTML.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.SetDocumentContent)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetDocumentContentCommandResponse
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Enters the 'inspect' mode. In this mode, elements that user is hovering over are highlighted. Backend then generates 'inspectNodeRequested' event upon element selection.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.SetInspectModeEnabled)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetInspectModeEnabledCommandResponse
 	{
 	}

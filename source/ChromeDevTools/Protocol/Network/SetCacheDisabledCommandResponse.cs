@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Toggles ignoring cache for each request. If <code>true</code>, cache will not be used.
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.SetCacheDisabled)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetCacheDisabledCommandResponse
 	{
 	}

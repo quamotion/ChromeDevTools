@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Marks last undoable state.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.MarkUndoableState)]
+	[SupportedBy("Chrome-Tip")]
 	public class MarkUndoableStateCommandResponse
 	{
 	}

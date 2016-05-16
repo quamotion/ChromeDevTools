@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Capture page screenshot.
 	/// </summary>
 	[Command(ProtocolName.Page.CaptureScreenshot)]
+	[SupportedBy("Chrome-Tip")]
 	public class CaptureScreenshotCommand
 	{
 	}

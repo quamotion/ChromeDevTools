@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Tells whether clearing browser cache is supported.
 	/// </summary>
 	[Command(ProtocolName.Network.CanClearBrowserCache)]
+	[SupportedBy("Chrome-Tip")]
 	public class CanClearBrowserCacheCommand
 	{
 	}

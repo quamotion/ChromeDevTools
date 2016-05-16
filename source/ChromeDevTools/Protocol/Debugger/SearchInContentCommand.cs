@@ -8,23 +8,28 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Searches for given string in script content.
 	/// </summary>
 	[Command(ProtocolName.Debugger.SearchInContent)]
+	[SupportedBy("Chrome-Tip")]
 	public class SearchInContentCommand
 	{
 		/// <summary>
 		/// Gets or sets Id of the script to search in.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string ScriptId { get; set; }
 		/// <summary>
 		/// Gets or sets String to search for.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string Query { get; set; }
 		/// <summary>
 		/// Gets or sets If true, search is case sensitive.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public bool CaseSensitive { get; set; }
 		/// <summary>
 		/// Gets or sets If true, treats string parameter as regex.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public bool IsRegex { get; set; }
 	}
 }

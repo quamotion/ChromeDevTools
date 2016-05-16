@@ -8,31 +8,38 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Highlights given rectangle. Coordinates are absolute with respect to the main frame viewport.
 	/// </summary>
 	[Command(ProtocolName.DOM.HighlightRect)]
+	[SupportedBy("Chrome-Tip")]
 	public class HighlightRectCommand
 	{
 		/// <summary>
 		/// Gets or sets X coordinate
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long X { get; set; }
 		/// <summary>
 		/// Gets or sets Y coordinate
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long Y { get; set; }
 		/// <summary>
 		/// Gets or sets Rectangle width
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long Width { get; set; }
 		/// <summary>
 		/// Gets or sets Rectangle height
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long Height { get; set; }
 		/// <summary>
 		/// Gets or sets The highlight fill color (default: transparent).
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public RGBA Color { get; set; }
 		/// <summary>
 		/// Gets or sets The highlight outline color (default: transparent).
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public RGBA OutlineColor { get; set; }
 	}
 }

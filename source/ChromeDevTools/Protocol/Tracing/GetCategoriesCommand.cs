@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Tracing
 	/// Gets supported tracing categories.
 	/// </summary>
 	[Command(ProtocolName.Tracing.GetCategories)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetCategoriesCommand
 	{
 	}

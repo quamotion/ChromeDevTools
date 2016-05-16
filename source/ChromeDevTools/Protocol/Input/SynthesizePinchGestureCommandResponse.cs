@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Input
 	/// Synthesizes a pinch gesture over a time period by issuing appropriate touch events.
 	/// </summary>
 	[CommandResponse(ProtocolName.Input.SynthesizePinchGesture)]
+	[SupportedBy("Chrome-Tip")]
 	public class SynthesizePinchGestureCommandResponse
 	{
 	}

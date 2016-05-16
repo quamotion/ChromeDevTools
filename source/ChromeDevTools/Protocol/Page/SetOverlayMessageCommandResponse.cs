@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Sets overlay message.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.SetOverlayMessage)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetOverlayMessageCommandResponse
 	{
 	}

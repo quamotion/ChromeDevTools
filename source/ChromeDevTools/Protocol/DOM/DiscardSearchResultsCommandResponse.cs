@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Discards search results from the session with the given id. <code>getSearchResults</code> should no longer be called for that search.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.DiscardSearchResults)]
+	[SupportedBy("Chrome-Tip")]
 	public class DiscardSearchResultsCommandResponse
 	{
 	}

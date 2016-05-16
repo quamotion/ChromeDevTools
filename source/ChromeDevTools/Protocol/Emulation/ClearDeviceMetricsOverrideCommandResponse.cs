@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Emulation
 	/// Clears the overriden device metrics.
 	/// </summary>
 	[CommandResponse(ProtocolName.Emulation.ClearDeviceMetricsOverride)]
+	[SupportedBy("Chrome-Tip")]
 	public class ClearDeviceMetricsOverrideCommandResponse
 	{
 	}

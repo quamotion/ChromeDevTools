@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Hides DOM node highlight.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.HideHighlight)]
+	[SupportedBy("Chrome-Tip")]
 	public class HideHighlightCommandResponse
 	{
 	}

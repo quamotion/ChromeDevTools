@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Emulation
 	/// Overrides the values of device screen dimensions (window.screen.width, window.screen.height, window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media query results).
 	/// </summary>
 	[CommandResponse(ProtocolName.Emulation.SetDeviceMetricsOverride)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetDeviceMetricsOverrideCommandResponse
 	{
 	}

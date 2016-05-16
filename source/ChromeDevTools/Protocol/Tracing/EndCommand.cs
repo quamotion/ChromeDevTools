@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Tracing
 	/// Stop trace events collection.
 	/// </summary>
 	[Command(ProtocolName.Tracing.End)]
+	[SupportedBy("Chrome-Tip")]
 	public class EndCommand
 	{
 	}

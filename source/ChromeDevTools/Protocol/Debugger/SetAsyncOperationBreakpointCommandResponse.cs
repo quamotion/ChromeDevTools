@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Sets breakpoint on AsyncOperation callback handler.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.SetAsyncOperationBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetAsyncOperationBreakpointCommandResponse
 	{
 	}

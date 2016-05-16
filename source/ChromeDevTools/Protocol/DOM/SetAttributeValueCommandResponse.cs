@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Sets attribute for an element with given id.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.SetAttributeValue)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetAttributeValueCommandResponse
 	{
 	}

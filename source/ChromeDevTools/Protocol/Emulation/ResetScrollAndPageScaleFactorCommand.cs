@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Emulation
 	/// Requests that scroll offsets and page scale factor are reset to initial values.
 	/// </summary>
 	[Command(ProtocolName.Emulation.ResetScrollAndPageScaleFactor)]
+	[SupportedBy("Chrome-Tip")]
 	public class ResetScrollAndPageScaleFactorCommand
 	{
 	}

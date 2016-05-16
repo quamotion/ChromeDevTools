@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// For testing.
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.SetDataSizeLimitsForTest)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetDataSizeLimitsForTestCommandResponse
 	{
 	}

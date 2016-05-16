@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Returns the current textual content and the URL for a stylesheet.
 	/// </summary>
 	[Command(ProtocolName.CSS.GetStyleSheetText)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetStyleSheetTextCommand
 	{
 		/// <summary>
 		/// Gets or sets StyleSheetId
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string StyleSheetId { get; set; }
 	}
 }

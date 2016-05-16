@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Highlights owner element of the frame with given id.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.HighlightFrame)]
+	[SupportedBy("Chrome-Tip")]
 	public class HighlightFrameCommandResponse
 	{
 	}

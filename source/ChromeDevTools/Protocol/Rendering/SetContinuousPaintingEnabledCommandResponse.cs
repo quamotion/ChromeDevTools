@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Rendering
 	/// Requests that backend enables continuous painting
 	/// </summary>
 	[CommandResponse(ProtocolName.Rendering.SetContinuousPaintingEnabled)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetContinuousPaintingEnabledCommandResponse
 	{
 	}

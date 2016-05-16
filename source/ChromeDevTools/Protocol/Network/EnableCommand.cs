@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Enables network tracking, network events will now be delivered to the client.
 	/// </summary>
 	[Command(ProtocolName.Network.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommand
 	{
 	}

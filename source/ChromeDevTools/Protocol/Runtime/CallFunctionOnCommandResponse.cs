@@ -8,15 +8,18 @@ namespace MasterDevs.ChromeDevTools.Protocol.Runtime
 	/// Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
 	/// </summary>
 	[CommandResponse(ProtocolName.Runtime.CallFunctionOn)]
+	[SupportedBy("Chrome-Tip")]
 	public class CallFunctionOnCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Call result.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public RemoteObject Result { get; set; }
 		/// <summary>
 		/// Gets or sets True if the result was thrown during the evaluation.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public bool WasThrown { get; set; }
 	}
 }

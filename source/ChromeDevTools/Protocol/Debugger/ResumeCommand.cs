@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Resumes JavaScript execution.
 	/// </summary>
 	[Command(ProtocolName.Debugger.Resume)]
+	[SupportedBy("Chrome-Tip")]
 	public class ResumeCommand
 	{
 	}

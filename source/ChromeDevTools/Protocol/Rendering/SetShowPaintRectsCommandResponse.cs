@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Rendering
 	/// Requests that backend shows paint rectangles
 	/// </summary>
 	[CommandResponse(ProtocolName.Rendering.SetShowPaintRects)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetShowPaintRectsCommandResponse
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.IndexedDB
 	/// Enables events from backend.
 	/// </summary>
 	[CommandResponse(ProtocolName.IndexedDB.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

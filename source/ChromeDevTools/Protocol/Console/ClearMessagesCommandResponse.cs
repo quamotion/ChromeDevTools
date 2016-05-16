@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Console
 	/// Clears console messages collected in the browser.
 	/// </summary>
 	[CommandResponse(ProtocolName.Console.ClearMessages)]
+	[SupportedBy("Chrome-Tip")]
 	public class ClearMessagesCommandResponse
 	{
 	}

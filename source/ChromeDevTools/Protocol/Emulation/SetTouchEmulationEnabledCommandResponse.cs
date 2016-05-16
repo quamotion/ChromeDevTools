@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Emulation
 	/// Toggles mouse event-based touch event emulation.
 	/// </summary>
 	[CommandResponse(ProtocolName.Emulation.SetTouchEmulationEnabled)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetTouchEmulationEnabledCommandResponse
 	{
 	}

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Enables the CSS agent for the given page. Clients should not assume that the CSS agent has been enabled until the result of this command is received.
 	/// </summary>
 	[Command(ProtocolName.CSS.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommand
 	{
 	}

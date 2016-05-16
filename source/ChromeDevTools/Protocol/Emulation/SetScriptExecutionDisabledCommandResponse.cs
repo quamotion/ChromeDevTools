@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Emulation
 	/// Switches script execution in the page.
 	/// </summary>
 	[CommandResponse(ProtocolName.Emulation.SetScriptExecutionDisabled)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetScriptExecutionDisabledCommandResponse
 	{
 	}

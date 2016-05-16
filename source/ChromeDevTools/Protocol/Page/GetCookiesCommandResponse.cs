@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Returns all browser cookies. Depending on the backend support, will return detailed cookie information in the <code>cookies</code> field.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.GetCookies)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetCookiesCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Array of cookie objects.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public Network.Cookie[] Cookies { get; set; }
 	}
 }

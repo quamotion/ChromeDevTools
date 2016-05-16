@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Input
 	/// Emulates touch event from the mouse event parameters.
 	/// </summary>
 	[CommandResponse(ProtocolName.Input.EmulateTouchFromMouseEvent)]
+	[SupportedBy("Chrome-Tip")]
 	public class EmulateTouchFromMouseEventCommandResponse
 	{
 	}

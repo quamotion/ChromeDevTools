@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMDebugger
 	/// Removes breakpoint on particular native event.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOMDebugger.RemoveInstrumentationBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class RemoveInstrumentationBreakpointCommandResponse
 	{
 	}

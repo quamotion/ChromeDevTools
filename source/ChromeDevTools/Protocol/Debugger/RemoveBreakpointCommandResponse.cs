@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Removes JavaScript breakpoint.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.RemoveBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class RemoveBreakpointCommandResponse
 	{
 	}

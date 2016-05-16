@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Enables or disables async call stacks tracking.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.SetAsyncCallStackDepth)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetAsyncCallStackDepthCommandResponse
 	{
 	}

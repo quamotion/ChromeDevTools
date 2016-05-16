@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Timeline
 	/// Deprecated.
 	/// </summary>
 	[CommandResponse(ProtocolName.Timeline.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

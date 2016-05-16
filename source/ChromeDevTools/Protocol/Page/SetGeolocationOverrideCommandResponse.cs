@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position unavailable.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.SetGeolocationOverride)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetGeolocationOverrideCommandResponse
 	{
 	}

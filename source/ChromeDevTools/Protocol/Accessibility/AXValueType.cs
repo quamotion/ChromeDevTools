@@ -4,6 +4,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Accessibility{
 	/// <summary>
 	/// Enum of possible property types.
 	/// </summary>
+	[SupportedBy("Chrome-Tip")]
 	public enum AXValueType
 	{
 			Boolean,

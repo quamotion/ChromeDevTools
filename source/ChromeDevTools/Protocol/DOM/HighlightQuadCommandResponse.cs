@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Highlights given quad. Coordinates are absolute with respect to the main frame viewport.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.HighlightQuad)]
+	[SupportedBy("Chrome-Tip")]
 	public class HighlightQuadCommandResponse
 	{
 	}

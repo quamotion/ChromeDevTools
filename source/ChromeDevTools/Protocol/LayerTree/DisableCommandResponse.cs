@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 	/// Disables compositing tree inspection.
 	/// </summary>
 	[CommandResponse(ProtocolName.LayerTree.Disable)]
+	[SupportedBy("Chrome-Tip")]
 	public class DisableCommandResponse
 	{
 	}

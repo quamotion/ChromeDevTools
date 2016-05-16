@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Clears browser cookies.
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.ClearBrowserCookies)]
+	[SupportedBy("Chrome-Tip")]
 	public class ClearBrowserCookiesCommandResponse
 	{
 	}

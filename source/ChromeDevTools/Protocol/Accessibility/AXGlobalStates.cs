@@ -4,6 +4,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Accessibility{
 	/// <summary>
 	/// States which apply to every AX node.
 	/// </summary>
+	[SupportedBy("Chrome-Tip")]
 	public enum AXGlobalStates
 	{
 			Disabled,

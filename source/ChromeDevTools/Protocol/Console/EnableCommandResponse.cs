@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Console
 	/// Enables console domain, sends the messages collected so far to the client by means of the <code>messageAdded</code> notification.
 	/// </summary>
 	[CommandResponse(ProtocolName.Console.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

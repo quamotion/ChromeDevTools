@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.FileSystem
 	/// Enables events from backend.
 	/// </summary>
 	[Command(ProtocolName.FileSystem.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommand
 	{
 	}

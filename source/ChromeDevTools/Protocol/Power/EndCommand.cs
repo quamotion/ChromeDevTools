@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Power
 	/// Stop power events collection.
 	/// </summary>
 	[Command(ProtocolName.Power.End)]
+	[SupportedBy("Chrome-Tip")]
 	public class EndCommand
 	{
 	}

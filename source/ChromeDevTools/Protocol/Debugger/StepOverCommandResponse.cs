@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Steps over the statement.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.StepOver)]
+	[SupportedBy("Chrome-Tip")]
 	public class StepOverCommandResponse
 	{
 	}

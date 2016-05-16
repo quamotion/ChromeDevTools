@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Always returns true.
 	/// </summary>
 	[Command(ProtocolName.Debugger.CanSetScriptSource)]
+	[SupportedBy("Chrome-Tip")]
 	public class CanSetScriptSourceCommand
 	{
 	}

@@ -8,15 +8,18 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Sets JavaScript breakpoint at a given location.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.SetBreakpoint)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetBreakpointCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Id of the created breakpoint for further reference.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public string BreakpointId { get; set; }
 		/// <summary>
 		/// Gets or sets Location this breakpoint resolved into.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public Location ActualLocation { get; set; }
 	}
 }

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Undoes the last performed action.
 	/// </summary>
 	[Command(ProtocolName.DOM.Undo)]
+	[SupportedBy("Chrome-Tip")]
 	public class UndoCommand
 	{
 	}

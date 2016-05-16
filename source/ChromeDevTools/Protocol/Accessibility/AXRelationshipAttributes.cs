@@ -4,6 +4,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Accessibility{
 	/// <summary>
 	/// Relationships between elements other than parent/child/sibling.
 	/// </summary>
+	[SupportedBy("Chrome-Tip")]
 	public enum AXRelationshipAttributes
 	{
 			Activedescendant,

@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Animation
 	/// Sets the playback rate of the document timeline.
 	/// </summary>
 	[CommandResponse(ProtocolName.Animation.SetPlaybackRate)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetPlaybackRateCommandResponse
 	{
 	}

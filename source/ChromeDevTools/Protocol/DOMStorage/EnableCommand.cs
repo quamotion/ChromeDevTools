@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOMStorage
 	/// Enables storage tracking, storage events will now be delivered to the client.
 	/// </summary>
 	[Command(ProtocolName.DOMStorage.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommand
 	{
 	}

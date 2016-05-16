@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.CSS
 	/// Modifies the rule selector.
 	/// </summary>
 	[CommandResponse(ProtocolName.CSS.SetRuleSelector)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetRuleSelectorCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets The resulting rule after the selector modification.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public CSSRule Rule { get; set; }
 	}
 }

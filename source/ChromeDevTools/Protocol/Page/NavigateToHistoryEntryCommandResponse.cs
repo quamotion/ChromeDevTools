@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Navigates current page to the given history entry.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.NavigateToHistoryEntry)]
+	[SupportedBy("Chrome-Tip")]
 	public class NavigateToHistoryEntryCommandResponse
 	{
 	}

@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Rendering
 	/// Requests that backend shows the FPS counter
 	/// </summary>
 	[Command(ProtocolName.Rendering.SetShowFPSCounter)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetShowFPSCounterCommand
 	{
 		/// <summary>
 		/// Gets or sets True for showing the FPS counter
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public bool Show { get; set; }
 	}
 }

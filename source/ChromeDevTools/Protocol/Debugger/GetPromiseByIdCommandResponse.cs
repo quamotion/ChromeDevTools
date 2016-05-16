@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Returns <code>Promise</code> with specified ID.
 	/// </summary>
 	[CommandResponse(ProtocolName.Debugger.GetPromiseById)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetPromiseByIdCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Object wrapper for <code>Promise</code> with specified ID, if any.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public Runtime.RemoteObject Promise { get; set; }
 	}
 }

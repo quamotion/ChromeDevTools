@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Network
 	/// Deletes browser cookie with given name, domain and path.
 	/// </summary>
 	[CommandResponse(ProtocolName.Network.DeleteCookie)]
+	[SupportedBy("Chrome-Tip")]
 	public class DeleteCookieCommandResponse
 	{
 	}

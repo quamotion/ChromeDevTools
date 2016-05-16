@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Steps out of the function call.
 	/// </summary>
 	[Command(ProtocolName.Debugger.StepOut)]
+	[SupportedBy("Chrome-Tip")]
 	public class StepOutCommand
 	{
 	}

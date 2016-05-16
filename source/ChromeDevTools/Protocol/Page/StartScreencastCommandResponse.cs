@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Starts sending each frame using the <code>screencastFrame</code> event.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.StartScreencast)]
+	[SupportedBy("Chrome-Tip")]
 	public class StartScreencastCommandResponse
 	{
 	}

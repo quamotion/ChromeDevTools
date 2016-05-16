@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.DOM
 	/// Returns node id at given location.
 	/// </summary>
 	[CommandResponse(ProtocolName.DOM.GetNodeForLocation)]
+	[SupportedBy("Chrome-Tip")]
 	public class GetNodeForLocationCommandResponse
 	{
 		/// <summary>
 		/// Gets or sets Id of the node at given coordinates.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public long NodeId { get; set; }
 	}
 }

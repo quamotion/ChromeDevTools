@@ -4,6 +4,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Accessibility{
 	/// <summary>
 	/// States which apply to widgets.
 	/// </summary>
+	[SupportedBy("Chrome-Tip")]
 	public enum AXWidgetStates
 	{
 			Checked,

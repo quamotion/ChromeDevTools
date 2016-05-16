@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Reloads given page optionally ignoring the cache.
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.Reload)]
+	[SupportedBy("Chrome-Tip")]
 	public class ReloadCommandResponse
 	{
 	}

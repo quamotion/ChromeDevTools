@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Power
 	/// Tells whether power profiling is supported.
 	/// </summary>
 	[Command(ProtocolName.Power.CanProfilePower)]
+	[SupportedBy("Chrome-Tip")]
 	public class CanProfilePowerCommand
 	{
 	}

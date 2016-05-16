@@ -8,11 +8,13 @@ namespace MasterDevs.ChromeDevTools.Protocol.Debugger
 	/// Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).
 	/// </summary>
 	[Command(ProtocolName.Debugger.SetSkipAllPauses)]
+	[SupportedBy("Chrome-Tip")]
 	public class SetSkipAllPausesCommand
 	{
 		/// <summary>
 		/// Gets or sets New value for skip pauses state.
 		/// </summary>
+		[SupportedBy("Chrome-Tip")]
 		public bool Skipped { get; set; }
 	}
 }

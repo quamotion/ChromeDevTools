@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Page
 	/// Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).
 	/// </summary>
 	[CommandResponse(ProtocolName.Page.HandleJavaScriptDialog)]
+	[SupportedBy("Chrome-Tip")]
 	public class HandleJavaScriptDialogCommandResponse
 	{
 	}

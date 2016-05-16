@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.LayerTree
 	/// Enables compositing tree inspection.
 	/// </summary>
 	[CommandResponse(ProtocolName.LayerTree.Enable)]
+	[SupportedBy("Chrome-Tip")]
 	public class EnableCommandResponse
 	{
 	}

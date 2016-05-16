@@ -8,6 +8,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Input
 	/// Dispatches a mouse event to the page.
 	/// </summary>
 	[CommandResponse(ProtocolName.Input.DispatchMouseEvent)]
+	[SupportedBy("Chrome-Tip")]
 	public class DispatchMouseEventCommandResponse
 	{
 	}
