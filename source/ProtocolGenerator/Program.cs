@@ -36,7 +36,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             //protocolFiles.Add("iOS-7.0", "Inspector-iOS-7.0.json");
             //protocolFiles.Add("iOS-8.0", "Inspector-iOS-8.0.json");
             //protocolFiles.Add("iOS-9.0", "Inspector-iOS-9.0.json");
-            protocolFiles.Add("iOS-9.3", "Inspector-iOS-9.3.json");
+            //protocolFiles.Add("iOS-9.3", "Inspector-iOS-9.3.json");
 
             Collection<Protocol> protocols = new Collection<Protocol>();
 
@@ -229,7 +229,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             }
             sb.AppendFormat("\t[{0}({1}.{2}.{3})]", EventAttribute, ProtocolNameClass, domainDirectoryInfo.Name, ToCamelCase(eventName));
             sb.AppendLine();
-            WriteSupportedBy(sb, supportedBy);
+            WriteSupportedBy(sb, 1, supportedBy);
             sb.AppendFormat("\tpublic class {0}", className);
             sb.AppendLine();
             sb.AppendLine("\t{");
@@ -274,7 +274,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             }
             sb.AppendFormat("\t[{0}({1}.{2}.{3})]", CommandResponseAttribute, ProtocolNameClass, domainDirectoryInfo.Name, ToCamelCase(commandName));
             sb.AppendLine();
-            WriteSupportedBy(sb, supportedBy);
+            WriteSupportedBy(sb, 1, supportedBy);
             sb.AppendFormat("\tpublic class {0}", className);
             sb.AppendLine();
             sb.AppendLine("\t{");
@@ -308,7 +308,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             }
             sb.AppendFormat("\t[{0}({1}.{2}.{3})]", CommandAttribute, ProtocolNameClass, domainDirectoryInfo.Name, ToCamelCase(commandName));
             sb.AppendLine();
-            WriteSupportedBy(sb, supportedBy);
+            WriteSupportedBy(sb, 1, supportedBy);
             sb.AppendFormat("\tpublic class {0}", className);
             sb.AppendLine();
             sb.AppendLine("\t{");
@@ -351,7 +351,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             sb.AppendFormat("\t/// {0}", type.Description);
             sb.AppendLine();
             sb.AppendLine("\t/// </summary>");
-            WriteSupportedBy(sb, type);
+            WriteSupportedBy(sb, 1, type);
             sb.AppendFormat("\tpublic class {0}", className);
             sb.AppendLine();
             sb.AppendLine("\t{");
@@ -410,6 +410,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             sb.AppendFormat("\t\t/// Gets or sets {0}", property.Description ?? propertyName);
             sb.AppendLine();
             sb.AppendLine("\t\t/// </summary>");
+            WriteSupportedBy(sb, 2, property);
             if (className == propertyName)
             {
                 sb.AppendFormat("\t\t[JsonProperty(\"{0}\")]", property.Name);
@@ -482,7 +483,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             sb.AppendFormat("\t/// {0}", type.Description);
             sb.AppendLine();
             sb.AppendLine("\t/// </summary>");
-            WriteSupportedBy(sb, type);
+            WriteSupportedBy(sb, 1, type);
             sb.AppendFormat("\tpublic enum {0}", enumName);
             sb.AppendLine();
             sb.AppendLine("\t{");
@@ -496,16 +497,21 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             WriteToFile(domainDirectoryInfo, enumName, sb.ToString());
         }
 
-        private static void WriteSupportedBy(StringBuilder sb, ProtocolItem type)
+        private static void WriteSupportedBy(StringBuilder sb, int indentation, ProtocolItem type)
         {
-            WriteSupportedBy(sb, type.SupportedBy);
+            WriteSupportedBy(sb, indentation, type.SupportedBy);
         }
 
-        private static void WriteSupportedBy(StringBuilder sb, IEnumerable<string> supportedBy)
+        private static void WriteSupportedBy(StringBuilder sb, int indentation, IEnumerable<string> supportedBy)
         {
             foreach(var browser in supportedBy)
             {
-                sb.AppendLine($"\t[SupportedBy(\"{browser}\")]");
+                for(int i = 0; i < indentation; i++)
+                {
+                    sb.Append('\t');
+                }
+
+                sb.AppendLine($"[SupportedBy(\"{browser}\")]");
             }
         }
 

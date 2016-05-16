@@ -82,7 +82,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
                     property.TypeReference = explicitMappings[fullReferenceName];
                 }
             }
-            else if(property.Items != null)
+            else if (property.Items != null)
             {
                 ResolveTypeReferences(protocol, domain, property.Items, explicitMappings);
             }
@@ -103,20 +103,45 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
                 foreach (var command in domain.Commands)
                 {
                     command.SupportedBy.Add(alias);
+
+                    foreach (var returnValue in command.Returns)
+                    {
+                        LoadProperty(returnValue, alias);
+                    }
+
+                    foreach (var parameter in command.Parameters)
+                    {
+                        LoadProperty(parameter, alias);
+                    }
                 }
 
                 foreach (var @event in domain.Events)
                 {
                     @event.SupportedBy.Add(alias);
+
+                    foreach (var parameter in @event.Parameters)
+                    {
+                        LoadProperty(parameter, alias);
+                    }
                 }
 
                 foreach (var type in domain.Types)
                 {
                     type.SupportedBy.Add(alias);
+
+                    foreach (var property in type.Properties)
+                    {
+                        LoadProperty(property, alias);
+                    }
                 }
             }
 
             return p;
+        }
+
+        static void LoadProperty(Property property, string alias)
+        {
+            property.SupportedBy.Add(alias);
         }
     }
 }

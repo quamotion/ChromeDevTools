@@ -2,7 +2,7 @@
 
 namespace MasterDevs.ChromeDevTools
 {
-    [AttributeUsage(AttributeTargets.Class)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property | AttributeTargets.Enum)]
     public class SupportedByAttribute : Attribute
     {
         public SupportedByAttribute(string browser)
