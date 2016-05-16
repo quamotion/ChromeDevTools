@@ -10,8 +10,8 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
     {
         public Type()
         {
-            this.Enum = new HashSet<string>();
-            this.Properties = new HashSet<Property>();
+            this.Enum = new Collection<string>();
+            this.Properties = new Collection<Property>();
         }
 
         [JsonProperty(PropertyName = "Id")]
@@ -28,13 +28,13 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
             set;
         }
 
-        public HashSet<string> Enum
+        public Collection<string> Enum
         {
             get;
             set;
         }
 
-        public HashSet<Property> Properties
+        public Collection<Property> Properties
         {
             get;
             set;
@@ -98,8 +98,8 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
 
             bool equals = base.Equals(obj);
             equals &= string.Equals(this.Kind, other.Kind, StringComparison.OrdinalIgnoreCase);
-            equals &= this.Enum.SetEquals(other.Enum);
-            equals &= this.Properties.SetEquals(other.Properties);
+            equals &= this.Enum.CollectionEqual(other.Enum);
+            equals &= this.Properties.CollectionEqual(other.Properties);
             equals &= Type.Equals(this.Items, other.Items);
             equals &= this.MinItems == other.MinItems;
             equals &= this.MaxItems == other.MaxItems;

@@ -2,7 +2,7 @@
 
 namespace MasterDevs.ChromeDevTools
 {
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property | AttributeTargets.Enum)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property | AttributeTargets.Enum, AllowMultiple = true)]
     public class SupportedByAttribute : Attribute
     {
         public SupportedByAttribute(string browser)

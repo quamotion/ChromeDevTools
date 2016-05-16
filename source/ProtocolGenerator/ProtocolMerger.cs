@@ -87,9 +87,39 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
                 throw new ArgumentNullException(nameof(target));
             }
 
-            Merge(protocol, source, source.Commands, target.Commands, (s, t) => false);
-            Merge(protocol, source, source.Events, target.Events, (s, t) => false);
-            Merge(protocol, source, source.Types, target.Types, (s, t) => false);
+            Merge(
+                protocol,
+                source,
+                source.Commands,
+                target.Commands,
+                (s, t) =>
+                {
+                    AddSupportedBy(s.SupportedBy, t.Parameters);
+                    AddSupportedBy(s.SupportedBy, t.Returns);
+                },
+                (s, t) => false);
+
+            Merge(
+                protocol,
+                source,
+                source.Events,
+                target.Events,
+                (s, t) => 
+                {
+                    AddSupportedBy(s.SupportedBy, t.Parameters);
+                },
+                (s, t) => false);
+
+            Merge(
+                protocol,
+                source,
+                source.Types,
+                target.Types,
+                (s, t) =>
+                {
+                    AddSupportedBy(s.SupportedBy, t.Properties);
+                },
+                (s, t) => false);
         }
 
         /// <summary>
@@ -110,7 +140,7 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
         /// <param name="target">
         /// The collection of items to merge into.
         /// </param>
-        static void Merge<T>(Protocol protocol, Domain domain, Collection<T> source, Collection<T> target, Func<T, T, bool> mergeAction)
+        static void Merge<T>(Protocol protocol, Domain domain, Collection<T> source, Collection<T> target, Action<T, T> markSupportedAction, Func<T, T, bool> mergeAction)
             where T : ProtocolItem
         {
             if (protocol == null)
@@ -161,12 +191,28 @@ namespace MasterDevs.ChromeDevTools.ProtocolGenerator
                     else
                     {
                         // If it is, just add the supportedBy flag.
-                        foreach (var v in sourceItem.SupportedBy)
-                        {
-                            targetItem.SupportedBy.Add(v);
-                        }
+                        AddSupportedBy(sourceItem.SupportedBy, targetItem);
+                        markSupportedAction(sourceItem, targetItem);
                     }
                 }
+            }
+        }
+
+        static void AddSupportedBy<T>(Collection<string> supportedBy, Collection<T> targetItems)
+            where T : ProtocolItem
+        {
+            foreach (var targetItem in targetItems)
+            {
+                AddSupportedBy(supportedBy, targetItem);
+            }
+        }
+
+        static void AddSupportedBy<T>(Collection<string> supportedBy, T targetItem)
+            where T : ProtocolItem
+        {
+            foreach (var v in supportedBy)
+            {
+                targetItem.SupportedBy.Add(v);
             }
         }
     }
